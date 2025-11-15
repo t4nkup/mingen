@@ -1,0 +1,5 @@
+- fix color scheme
+- cleanup vscode (switch highlight color to green from blue)
+    - switch highlight color to green from blue
+    - remove the minimap
+- figure out how to draw a cube and rotate it
