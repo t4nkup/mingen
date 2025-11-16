@@ -8,7 +8,7 @@ int main(void)
     
     int screenWidth = 800;
     int screenHeight = 600;
-    
+    // here
     Ball ball;
     Ball_Init(&ball); // initialize the ball
     
