@@ -1,3 +1,4 @@
+#include <stdio.h> 
 #include "../lib/raylib.h"
 #include "../include/ball.h"
 
@@ -16,6 +17,7 @@ int main(void)
     
     while (!WindowShouldClose())
     {
+        printf("test");
         Ball_Update(&ball); // update the ball
         
         BeginDrawing();

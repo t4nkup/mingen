@@ -1,6 +1,6 @@
 CMakeFiles/mingen.dir/src/ball.c.obj: \
  C:\Users\Unknown\Desktop\mingen\src\ball.c \
- C:/Users/Unknown/Desktop/mingen/lib/raylib/raylib.h \
+ C:/Users/Unknown/Desktop/mingen/lib/raylib.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdarg.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdarg.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw_stdarg.h \

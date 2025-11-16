@@ -1,4 +1,4 @@
-#include "../lib/raylib/raylib.h"
+#include "../lib/raylib.h"
 #include "../include/ball.h"
 
 void Ball_Init(Ball* ball) {
