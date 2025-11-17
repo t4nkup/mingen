@@ -11,19 +11,20 @@ endif()
 
 file(GLOB_RECURSE SOURCES "src/*.c")
 
+list(APPEND SOURCES "${CMAKE_SOURCE_DIR}/lib/GLAD/glad.c")
+
 add_executable(mingen ${SOURCES})
 
 target_include_directories(mingen PRIVATE
     "${CMAKE_SOURCE_DIR}/src"
-    "${CMAKE_SOURCE_DIR}/include"
     "${CMAKE_SOURCE_DIR}/lib"
+    "${CMAKE_SOURCE_DIR}/lib/GLAD/include"
+    "${CMAKE_SOURCE_DIR}/lib/GLFW/include"
 )
 
 target_link_libraries(mingen PRIVATE
-    "${CMAKE_SOURCE_DIR}/lib/raylib/windows/libraylib.a"
-    opengl32
+    "${CMAKE_SOURCE_DIR}/lib/GLFW/libglfw3.a"
     gdi32
-    winmm
 )
 
 set_target_properties(mingen PROPERTIES

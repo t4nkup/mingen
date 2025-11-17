@@ -1,45 +1,63 @@
-#include "../include/mingen.h"
+#include "mingen.h"
 
-int main(void)
+//
+//  MAIN.C: starting point of our program
+//
+
+int main()
 {
-    const int screenWidth = 800;
-    const int screenHeight = 600;
+    // declare our "manager" struct, this will be passed around 
+    // everywhere by reference so we can easily access our modules
+    FN fn; 
 
-    InitWindow(screenWidth, screenHeight, "Rotating Cube - Correct Raylib 5.5");
+    // initialize our modules
+    _init_array(&fn);
+    _init_chunk(&fn);
+    _init_collection(&fn);
+    _init_data(&fn);
+    _init_game(&fn);
+    _init_graphics(&fn);
+    _init_input(&fn);
+    _init_loop(&fn);
+    _init_map(&fn);
+    _init_mesh(&fn);
+    _init_network(&fn);
+    _init_shapes(&fn);
+    _init_sound(&fn);
+    _init_utility(&fn);
 
-    Camera3D camera = { 0 };
-    camera.position = (Vector3){4.0f, 4.0f, 4.0f};
-    camera.target = (Vector3){0.0f, 0.0f, 0.0f};
-    camera.up = (Vector3){0.0f, 1.0f, 0.0f};
-    camera.fovy = 45.0f;
-    camera.projection = CAMERA_PERSPECTIVE;
+    // create a new game and a map to go with it
+    game *g = fn.game.new(&fn, 0, "test");
+    map *m = fn.map.new(&fn, 0, "test");
 
-    Model cube = LoadModelFromMesh(GenMeshCube(2.0f, 2.0f, 2.0f));
-    Vector3 cubePosition = {0.0f, 0.0f, 0.0f};
-    Vector3 rotationAxis = {0.0f, 1.0f, 0.0f};
-    float rotationAngle = 0.0f;
+    // assign the map to the game
+    fn.array.add(g->mapIDs, 1, (int[]) { m->ID });
+    fn.array.add(g->maps, 1, (map[]) { *m });
 
-    SetTargetFPS(60);
+    // create a new chunk for the map
+    chunk *c = fn.chunk.new(&fn, 0, 0, 0);
+    fn.array.add(c->mesh->vertices, 12, (float[]){
+        -1.0f, -1.0f, 0.0f,  
+        -1.0f, 1.0f, 0.0f,  
+        1.0f, 1.0f, 0.0f,
+        1.0f, 0.0f, 0.0f
+    });
+    fn.array.add(c->mesh->indices, 6, (int[]){
+        0, 1, 2,
+        0, 2, 3
+    });
+    fn.array.add(m->chunks, 1, (chunk[]){ *c });
 
-    while (!WindowShouldClose())
-    {
-        rotationAngle += 0.5f;  // degrees per frame
+    fn.data.game = g;
+    fn.data.map = m;
 
-        BeginDrawing();
-        ClearBackground(RAYWHITE);
 
-        BeginMode3D(camera);
-        DrawModelEx(cube, cubePosition, rotationAxis, rotationAngle, (Vector3){1.0f, 1.0f, 1.0f}, RED);
-        DrawGrid(10, 1.0f);
-        EndMode3D();
+    // start our loop and create our openGL window
+    fn.loop.start(&fn);
+    fn.gfx.setup(&fn);
 
-        DrawText("Rotating cube with DrawModelEx", 10, 10, 20, DARKGRAY);
-
-        EndDrawing();
-    }
-
-    UnloadModel(cube);
-    CloseWindow();
+    // cleanup
+    fn.gfx.unload(&fn);
 
     return 0;
 }

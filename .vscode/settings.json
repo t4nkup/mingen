@@ -1,0 +1,139 @@
+{
+	"editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": false,
+    "editor.fontSize": 12,
+    "breadcrumbs.enabled": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.verticalScrollbarSize": 12,
+    "editor.scrollbar.vertical": "visible",
+    "editor.overviewRulerBorder": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.semanticHighlighting.enabled": false,
+
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            { "scope": "comment.line.double-slash.c", "settings": { "foreground": "#666666" } },
+            { "scope": "entity.name.type", "settings": { "foreground": "#68bb8b" } },
+            { "scope": "entity.name.function", "settings": { "foreground": "#c7ad7c" } },
+            { "scope": "storage.type.built-in.primitive.c", "settings": { "foreground": "#68bb8b" } },
+            { "scope": "storage.modifier.c", "settings": { "foreground": "#68bb8b" } },
+            { "scope": "keyword.other.typedef.c", "settings": { "foreground": "#7e94d1" } },
+            { "scope": "storage.type.struct.c", "settings": { "foreground": "#7e94d1" } },
+            { "scope": "keyword.control.directive.include.c", "settings": { "foreground": "#68bb8b" } },
+            { "scope": "string", "settings": { "foreground": "#bababa" } },
+            { "scope": "keyword.control.directive.conditional.c", "settings": { "foreground": "#68bb8b" } },
+            { "scope": "keyword.control", "settings": { "foreground": "#68bb8b" } },
+            { "scope": "entity.name.function.preprocessor.c", "settings": { "foreground": "#bbd292" } },
+            { "scope": "variable", "settings": { "foreground": "#d2d2d2" } },
+            { "scope": "keyword.operator.c", "settings": { "foreground": "#999999" } },
+            { "scope": "constant.numeric", "settings": { "foreground": "#787878" } },
+            { "scope": "keyword.other.unit", "settings": { "foreground": "#787878" } },
+            { "scope": "punctuation.separator.delimiter.c", "settings": { "foreground": "#8a8a8a" } },
+            {
+                "scope": [
+                    "keyword.operator",
+                    "punctuation.section.parens",
+                    "punctuation.definition.group.begin",
+                    "punctuation.definition.group.end",
+                    "punctuation.definition.parameters.begin",
+                    "punctuation.definition.parameters.end",
+                    "punctuation.section.parameters.begin.bracket.round.c",
+                    "punctuation.section.parameters.end.bracket.round.c",
+                    "meta.group",
+                    "meta.brace.round",
+                    "punctuation.section.block.begin",
+                    "punctuation.section.block.end",
+                    "punctuation.section.braces",
+                    "punctuation.definition.block",
+                    "meta.brace.curly",
+                    "storage.modifier.array.bracket.square.c",
+                    "punctuation.section.brackets",
+                    "punctuation.definition.brackets.begin",
+                    "punctuation.definition.brackets.end",
+                    "meta.brace.square"
+                ],
+                "settings": { "foreground": "#7e7e7e" }
+            }
+        ]
+    },
+    "files.associations": {
+        "glfw3.h": "c",
+        "array.h": "c",
+        "glad.h": "c",
+        "mingen.h": "c",
+        "defs.h": "c"
+    }
+
+    // "editor.overviewRulerBorder": false,
+    // "editor.bracketPairColorization.enabled": false,
+    // "editor.semanticHighlighting.enabled": false,
+    // "editor.semanticTokenColorCustomizations.enabled": false, 
+
+    // "editor.tokenColorCustomizations": {
+    //     "keywords": "#68bb8b",
+    //     "functions": "#c7ad7c",
+    //     "comments": "#666",
+    //     "numbers": "#c3c3c3",
+    //     "strings": "#bababa",
+    //     "types": "#68bb8b",
+    //     "variables": "#e3e3e3",
+    //     "textMateRules": [
+    //         {
+    //             "scope": "storage.modifier",
+    //             "settings": { "foreground": "#7e7e7e" }
+    //         },
+    //         {
+    //             "scope": "storage.type",
+    //             "settings": { "foreground": "#FF0000" }
+    //         },
+    //         {
+    //             "scope": "entity.name.function.preprocessor",
+    //             "settings": { "foreground": "#92c5c6", }
+    //         },
+    //         {
+    //             "scope": [
+    //                 "keyword.operator",
+    //                 "punctuation.section.parens",
+    //                 "punctuation.definition.group.begin",
+    //                 "punctuation.definition.group.end",
+    //                 "punctuation.definition.parameters.begin",
+    //                 "punctuation.definition.parameters.end",
+    //                 "punctuation.section.parameters.begin.bracket.round.c",
+    //                 "punctuation.section.parameters.end.bracket.round.c",
+    //                 "meta.group",
+    //                 "meta.brace.round",
+
+    //                 "punctuation.section.block.begin",
+    //                 "punctuation.section.block.end",
+    //                 "punctuation.section.braces",
+    //                 "punctuation.definition.block",
+    //                 "meta.block",
+    //                 "meta.brace.curly",
+
+    //                 "punctuation.section.brackets",
+    //                 "punctuation.definition.brackets.begin",
+    //                 "punctuation.definition.brackets.end",
+    //                 "meta.brace.square"
+    //             ],
+    //             "settings": {
+    //                 "foreground": "#7e7e7e"   // <<< choose ANY COLOR
+    //             }
+    //         },
+    //         {
+    //             "scope": "variable.parameter.probably.c",
+    //             "settings": { "foreground": "#e3e3e3" }
+    //         }
+    //     ]
+    // },
+    // "workbench.tree.indent": 16,
+    // "workbench.tree.renderIndentGuides": "always",
+    // "window.autoDetectColorScheme": true,
+    // "window.border": "off",
+    // "workbench.colorCustomizations": {
+    //     "tab.activeBorderTop": "#68bb8b",
+    //     //"statusBar.background": "#222222",
+    //     "activityBar.activeBorder": "#68bb8b",
+    //     "panelTitle.activeBorder": "#68bb8b",
+    //     "window.border": "#68bb8b"
+    // }
+}

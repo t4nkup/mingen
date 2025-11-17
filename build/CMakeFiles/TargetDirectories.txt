@@ -1,0 +1,3 @@
+C:/Users/Unknown/Desktop/mingen/build/CMakeFiles/mingen.dir
+C:/Users/Unknown/Desktop/mingen/build/CMakeFiles/edit_cache.dir
+C:/Users/Unknown/Desktop/mingen/build/CMakeFiles/rebuild_cache.dir

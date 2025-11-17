@@ -1,3 +1,4 @@
+- finish refactoring code
 - draw a cube 
 - get input working 
 - get gamepad input working 
