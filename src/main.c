@@ -1,4 +1,4 @@
-#include "raylib.h"
+#include "../include/mingen.h"
 
 int main(void)
 {

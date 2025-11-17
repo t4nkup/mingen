@@ -1,1 +1,7 @@
-- figure out how to draw a cube and rotate it
+- draw a cube 
+- get input working 
+- get gamepad input working 
+- move camera around by input 
+
+- get a collision setup on the chunk
+- when pressing A on the chunk add a new cube to it
