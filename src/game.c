@@ -20,6 +20,11 @@ static void _game_unload(FN *fn)
     
 }
 
+//
+//  GAME.C:     handles all of our utility/maintenance for a "game" object
+//              which is a "minigame" that a user creates with mingen
+//
+
 void _init_game(FN *fn)
 {
     fn->game.new = &_game_new;

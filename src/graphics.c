@@ -157,6 +157,10 @@ static void _graphics_unload(FN *fn)
     glfwTerminate();
 }
 
+//
+//  GRAPHICS.C:  handles all of our openGL rendering
+//
+
 void _init_graphics(FN *fn)
 {
     fn->gfx.setup = &_graphics_setup;

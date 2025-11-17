@@ -1,6 +1,9 @@
 #include "../include/mingen.h"
 
-// NEW:  creates a new array with a specified size where size = # of bits per element
+//
+//  NEW:  creates a new array with a specified size where size = # of bits per element
+//
+
 static array* _array_new(int length, int size)
 {
     array *a = malloc(sizeof(array));
@@ -10,7 +13,10 @@ static array* _array_new(int length, int size)
     return a;
 }
 
-// ADD:  adds more elements to the array resizing it in the process
+//
+//  ADD:  adds more elements to the array resizing it in the process
+//
+
 static void _array_add(array *array, int length, void *data)
 {
     array->data = realloc(array->data, (array->length + length) * array->size);
@@ -18,34 +24,50 @@ static void _array_add(array *array, int length, void *data)
     array->length += length;
 }
 
-// SET:  assigns a new piece of data at index
+//
+//  SET:  assigns a new piece of data at index
+//
+
 static void _array_set(array *array, int index, int length, void *data)
 {
     memcpy(array->data + (index * array->size), data, length * array->size);
 }
 
-// REMOVE:  removes an element in the array at index
+//
+//  REMOVE:  removes an element in the array at index
+//
+
 static void _array_remove(array *array, int index, int length)
 {
     memcpy(array->data + (index * array->size), array->data + ((index + length) * array->size), (array->length - length) * array->size);
     array->length -= length;
 }
 
-// RESIZE:  resizes an array to a new length
+//
+//  RESIZE:  resizes an array to a new length
+//
+
 static void _array_resize(array *array, int length)
 {
     array->length = length;
     array->data = realloc(array->data, length * array->size);
 }
 
-// FREE:  frees up the array memory
+//
+//  FREE:  frees up the array memory
+//
+
 static void _array_free(array *array)
 {
     free(array->data);
     free(array);
 }
 
-// INIT:  sets up our array module
+//
+//  ARRAY.C:    a helper module for managing arrays
+//              we can have an array of primitives and also custom 
+//              types such as component
+
 void _init_array(FN *fn)
 {
     fn->array.new = &_array_new;

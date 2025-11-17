@@ -1,5 +1,9 @@
 #include "../include/mingen.h"
 
+//
+//  NEW:  creates a new chunk in memory
+//
+
 static chunk* _chunk_new(FN *fn, int x, int y, int z)
 {
     chunk *c = malloc(sizeof(chunk));
@@ -15,6 +19,10 @@ static chunk* _chunk_new(FN *fn, int x, int y, int z)
     return c;
 }
 
+//
+//  BUILD:  builds a chunk mesh from its block data
+//
+
 static void _chunk_build(FN *fn, chunk *chunk)
 {
     // chunk->mesh.vertices[9] = {
@@ -23,6 +31,11 @@ static void _chunk_build(FN *fn, chunk *chunk)
     //      0.0f,  0.5f, 0.0f  
     // };
 }
+
+//
+//  CHUNK.C:    a chunk represents a 10x10x10 block of nodes in a game
+//              it is the "level geometry" or terrain of a world
+//
 
 void _init_chunk(FN *fn)
 {
