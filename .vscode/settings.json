@@ -29,6 +29,10 @@
             { "scope": "constant.numeric", "settings": { "foreground": "#787878" } },
             { "scope": "keyword.other.unit", "settings": { "foreground": "#787878" } },
             { "scope": "punctuation.separator.delimiter.c", "settings": { "foreground": "#8a8a8a" } },
+            { "scope": "punctuation.section.arguments.begin.bracket.round.function.member.c", "settings": { "foreground": "#8a8a8a" } },
+            { "scope": "punctuation.section.arguments.end.bracket.round.function.member.c", "settings": { "foreground": "#8a8a8a" } },
+            { "scope": "punctuation.section.arguments.begin.bracket.round.c", "settings": { "foreground": "#8a8a8a" } },
+            { "scope": "punctuation.section.arguments.end.bracket.round.c", "settings": { "foreground": "#8a8a8a" } },
             {
                 "scope": [
                     "keyword.operator",

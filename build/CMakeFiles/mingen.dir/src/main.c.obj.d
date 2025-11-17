@@ -1,6 +1,6 @@
 CMakeFiles/mingen.dir/src/main.c.obj: \
  C:\Users\Unknown\Desktop\mingen\src\main.c \
- C:\Users\Unknown\Desktop\mingen\src\mingen.h \
+ C:/Users/Unknown/Desktop/mingen/include/mingen.h \
  C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
  C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
  C:/mingw64/x86_64-w64-mingw32/include/_mingw.h \
@@ -31,28 +31,8 @@ CMakeFiles/mingen.dir/src/main.c.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
  C:/Users/Unknown/Desktop/mingen/lib/GLFW/glfw3.h \
- C:\Users\Unknown\Desktop\mingen\src\_/enum.h \
- C:\Users\Unknown\Desktop\mingen\src\_/defs.h \
- C:\Users\Unknown\Desktop\mingen\src\_/comp.h \
- C:\Users\Unknown\Desktop\mingen\src\_/defs.h \
- C:\Users\Unknown\Desktop\mingen\src\_/fn.h \
- C:/Users/Unknown/Desktop/mingen/src/mingen.h \
- C:\Users\Unknown\Desktop\mingen\src\array/array.h \
- C:\Users\Unknown\Desktop\mingen\src\chunk/chunk.h \
- C:\Users\Unknown\Desktop\mingen\src\collection/collection.h \
- C:\Users\Unknown\Desktop\mingen\src\data/data.h \
- C:\Users\Unknown\Desktop\mingen\src\game/game.h \
- C:\Users\Unknown\Desktop\mingen\src\graphics/graphics.h \
- C:\Users\Unknown\Desktop\mingen\src\input/input.h \
- C:\Users\Unknown\Desktop\mingen\src\loop/loop.h \
- C:\Users\Unknown\Desktop\mingen\src\map/map.h \
- C:\Users\Unknown\Desktop\mingen\src\mesh/mesh.h \
- C:\Users\Unknown\Desktop\mingen\src\network/network.h \
- C:\Users\Unknown\Desktop\mingen\src\shapes/shapes.h \
- C:\Users\Unknown\Desktop\mingen\src\sound/sound.h \
- C:/Users/Unknown/Desktop/mingen/src/_/fn.h \
- C:/Users/Unknown/Desktop/mingen/src/mingen.h \
- C:\Users\Unknown\Desktop\mingen\src\utility/utility.h \
- C:/Users/Unknown/Desktop/mingen/src/_/fn.h \
- C:\Users\Unknown\Desktop\mingen\src\shapes/solid/solid.h \
- C:\Users\Unknown\Desktop\mingen\src\shapes/ramp/ramp.h
+ C:/Users/Unknown/Desktop/mingen/include/enum.h \
+ C:/Users/Unknown/Desktop/mingen/include/mingen.h \
+ C:/Users/Unknown/Desktop/mingen/include/defs.h \
+ C:/Users/Unknown/Desktop/mingen/include/comp.h \
+ C:/Users/Unknown/Desktop/mingen/include/fn.h

@@ -1,4 +1,4 @@
-#include "mingen.h"
+#include "../include/mingen.h"
 
 //
 //  MAIN.C: starting point of our program
@@ -22,7 +22,8 @@ int main()
     _init_map(&fn);
     _init_mesh(&fn);
     _init_network(&fn);
-    _init_shapes(&fn);
+    _init_shape_solid(&fn);
+    _init_shape_ramp(&fn);
     _init_sound(&fn);
     _init_utility(&fn);
 
@@ -36,13 +37,13 @@ int main()
 
     // create a new chunk for the map
     chunk *c = fn.chunk.new(&fn, 0, 0, 0);
-    fn.array.add(c->mesh->vertices, 12, (float[]){
+    fn.array.add(c->mesh->vertex, 12, (float[]){
         -1.0f, -1.0f, 0.0f,  
         -1.0f, 1.0f, 0.0f,  
         1.0f, 1.0f, 0.0f,
         1.0f, 0.0f, 0.0f
     });
-    fn.array.add(c->mesh->indices, 6, (int[]){
+    fn.array.add(c->mesh->index, 6, (int[]){
         0, 1, 2,
         0, 2, 3
     });

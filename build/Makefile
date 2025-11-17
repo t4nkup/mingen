@@ -152,29 +152,29 @@ lib/GLAD/glad.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/lib/GLAD/glad.c.s
 .PHONY : lib/GLAD/glad.c.s
 
-src/array/array.obj: src/array/array.c.obj
-.PHONY : src/array/array.obj
+src/array.obj: src/array.c.obj
+.PHONY : src/array.obj
 
 # target to build an object file
-src/array/array.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/array/array.c.obj
-.PHONY : src/array/array.c.obj
+src/array.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/array.c.obj
+.PHONY : src/array.c.obj
 
-src/array/array.i: src/array/array.c.i
-.PHONY : src/array/array.i
+src/array.i: src/array.c.i
+.PHONY : src/array.i
 
 # target to preprocess a source file
-src/array/array.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/array/array.c.i
-.PHONY : src/array/array.c.i
+src/array.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/array.c.i
+.PHONY : src/array.c.i
 
-src/array/array.s: src/array/array.c.s
-.PHONY : src/array/array.s
+src/array.s: src/array.c.s
+.PHONY : src/array.s
 
 # target to generate assembly for a file
-src/array/array.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/array/array.c.s
-.PHONY : src/array/array.c.s
+src/array.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/array.c.s
+.PHONY : src/array.c.s
 
 src/chunk.obj: src/chunk.c.obj
 .PHONY : src/chunk.obj
@@ -200,173 +200,149 @@ src/chunk.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/chunk.c.s
 .PHONY : src/chunk.c.s
 
-src/chunk/chunk.obj: src/chunk/chunk.c.obj
-.PHONY : src/chunk/chunk.obj
+src/collection.obj: src/collection.c.obj
+.PHONY : src/collection.obj
 
 # target to build an object file
-src/chunk/chunk.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/chunk/chunk.c.obj
-.PHONY : src/chunk/chunk.c.obj
+src/collection.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/collection.c.obj
+.PHONY : src/collection.c.obj
 
-src/chunk/chunk.i: src/chunk/chunk.c.i
-.PHONY : src/chunk/chunk.i
+src/collection.i: src/collection.c.i
+.PHONY : src/collection.i
 
 # target to preprocess a source file
-src/chunk/chunk.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/chunk/chunk.c.i
-.PHONY : src/chunk/chunk.c.i
+src/collection.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/collection.c.i
+.PHONY : src/collection.c.i
 
-src/chunk/chunk.s: src/chunk/chunk.c.s
-.PHONY : src/chunk/chunk.s
+src/collection.s: src/collection.c.s
+.PHONY : src/collection.s
 
 # target to generate assembly for a file
-src/chunk/chunk.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/chunk/chunk.c.s
-.PHONY : src/chunk/chunk.c.s
+src/collection.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/collection.c.s
+.PHONY : src/collection.c.s
 
-src/collection/collection.obj: src/collection/collection.c.obj
-.PHONY : src/collection/collection.obj
+src/data.obj: src/data.c.obj
+.PHONY : src/data.obj
 
 # target to build an object file
-src/collection/collection.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/collection/collection.c.obj
-.PHONY : src/collection/collection.c.obj
+src/data.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/data.c.obj
+.PHONY : src/data.c.obj
 
-src/collection/collection.i: src/collection/collection.c.i
-.PHONY : src/collection/collection.i
+src/data.i: src/data.c.i
+.PHONY : src/data.i
 
 # target to preprocess a source file
-src/collection/collection.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/collection/collection.c.i
-.PHONY : src/collection/collection.c.i
+src/data.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/data.c.i
+.PHONY : src/data.c.i
 
-src/collection/collection.s: src/collection/collection.c.s
-.PHONY : src/collection/collection.s
+src/data.s: src/data.c.s
+.PHONY : src/data.s
 
 # target to generate assembly for a file
-src/collection/collection.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/collection/collection.c.s
-.PHONY : src/collection/collection.c.s
+src/data.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/data.c.s
+.PHONY : src/data.c.s
 
-src/data/data.obj: src/data/data.c.obj
-.PHONY : src/data/data.obj
+src/game.obj: src/game.c.obj
+.PHONY : src/game.obj
 
 # target to build an object file
-src/data/data.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/data/data.c.obj
-.PHONY : src/data/data.c.obj
+src/game.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/game.c.obj
+.PHONY : src/game.c.obj
 
-src/data/data.i: src/data/data.c.i
-.PHONY : src/data/data.i
+src/game.i: src/game.c.i
+.PHONY : src/game.i
 
 # target to preprocess a source file
-src/data/data.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/data/data.c.i
-.PHONY : src/data/data.c.i
+src/game.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/game.c.i
+.PHONY : src/game.c.i
 
-src/data/data.s: src/data/data.c.s
-.PHONY : src/data/data.s
+src/game.s: src/game.c.s
+.PHONY : src/game.s
 
 # target to generate assembly for a file
-src/data/data.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/data/data.c.s
-.PHONY : src/data/data.c.s
+src/game.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/game.c.s
+.PHONY : src/game.c.s
 
-src/game/game.obj: src/game/game.c.obj
-.PHONY : src/game/game.obj
+src/graphics.obj: src/graphics.c.obj
+.PHONY : src/graphics.obj
 
 # target to build an object file
-src/game/game.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/game/game.c.obj
-.PHONY : src/game/game.c.obj
+src/graphics.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/graphics.c.obj
+.PHONY : src/graphics.c.obj
 
-src/game/game.i: src/game/game.c.i
-.PHONY : src/game/game.i
+src/graphics.i: src/graphics.c.i
+.PHONY : src/graphics.i
 
 # target to preprocess a source file
-src/game/game.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/game/game.c.i
-.PHONY : src/game/game.c.i
+src/graphics.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/graphics.c.i
+.PHONY : src/graphics.c.i
 
-src/game/game.s: src/game/game.c.s
-.PHONY : src/game/game.s
+src/graphics.s: src/graphics.c.s
+.PHONY : src/graphics.s
 
 # target to generate assembly for a file
-src/game/game.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/game/game.c.s
-.PHONY : src/game/game.c.s
+src/graphics.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/graphics.c.s
+.PHONY : src/graphics.c.s
 
-src/graphics/graphics.obj: src/graphics/graphics.c.obj
-.PHONY : src/graphics/graphics.obj
+src/input.obj: src/input.c.obj
+.PHONY : src/input.obj
 
 # target to build an object file
-src/graphics/graphics.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/graphics/graphics.c.obj
-.PHONY : src/graphics/graphics.c.obj
+src/input.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/input.c.obj
+.PHONY : src/input.c.obj
 
-src/graphics/graphics.i: src/graphics/graphics.c.i
-.PHONY : src/graphics/graphics.i
+src/input.i: src/input.c.i
+.PHONY : src/input.i
 
 # target to preprocess a source file
-src/graphics/graphics.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/graphics/graphics.c.i
-.PHONY : src/graphics/graphics.c.i
+src/input.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/input.c.i
+.PHONY : src/input.c.i
 
-src/graphics/graphics.s: src/graphics/graphics.c.s
-.PHONY : src/graphics/graphics.s
+src/input.s: src/input.c.s
+.PHONY : src/input.s
 
 # target to generate assembly for a file
-src/graphics/graphics.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/graphics/graphics.c.s
-.PHONY : src/graphics/graphics.c.s
+src/input.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/input.c.s
+.PHONY : src/input.c.s
 
-src/input/input.obj: src/input/input.c.obj
-.PHONY : src/input/input.obj
+src/loop.obj: src/loop.c.obj
+.PHONY : src/loop.obj
 
 # target to build an object file
-src/input/input.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/input/input.c.obj
-.PHONY : src/input/input.c.obj
+src/loop.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/loop.c.obj
+.PHONY : src/loop.c.obj
 
-src/input/input.i: src/input/input.c.i
-.PHONY : src/input/input.i
-
-# target to preprocess a source file
-src/input/input.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/input/input.c.i
-.PHONY : src/input/input.c.i
-
-src/input/input.s: src/input/input.c.s
-.PHONY : src/input/input.s
-
-# target to generate assembly for a file
-src/input/input.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/input/input.c.s
-.PHONY : src/input/input.c.s
-
-src/loop/loop.obj: src/loop/loop.c.obj
-.PHONY : src/loop/loop.obj
-
-# target to build an object file
-src/loop/loop.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/loop/loop.c.obj
-.PHONY : src/loop/loop.c.obj
-
-src/loop/loop.i: src/loop/loop.c.i
-.PHONY : src/loop/loop.i
+src/loop.i: src/loop.c.i
+.PHONY : src/loop.i
 
 # target to preprocess a source file
-src/loop/loop.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/loop/loop.c.i
-.PHONY : src/loop/loop.c.i
+src/loop.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/loop.c.i
+.PHONY : src/loop.c.i
 
-src/loop/loop.s: src/loop/loop.c.s
-.PHONY : src/loop/loop.s
+src/loop.s: src/loop.c.s
+.PHONY : src/loop.s
 
 # target to generate assembly for a file
-src/loop/loop.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/loop/loop.c.s
-.PHONY : src/loop/loop.c.s
+src/loop.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/loop.c.s
+.PHONY : src/loop.c.s
 
 src/main.obj: src/main.c.obj
 .PHONY : src/main.obj
@@ -392,197 +368,173 @@ src/main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/main.c.s
 .PHONY : src/main.c.s
 
-src/map/map.obj: src/map/map.c.obj
-.PHONY : src/map/map.obj
+src/map.obj: src/map.c.obj
+.PHONY : src/map.obj
 
 # target to build an object file
-src/map/map.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/map/map.c.obj
-.PHONY : src/map/map.c.obj
+src/map.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/map.c.obj
+.PHONY : src/map.c.obj
 
-src/map/map.i: src/map/map.c.i
-.PHONY : src/map/map.i
+src/map.i: src/map.c.i
+.PHONY : src/map.i
 
 # target to preprocess a source file
-src/map/map.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/map/map.c.i
-.PHONY : src/map/map.c.i
+src/map.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/map.c.i
+.PHONY : src/map.c.i
 
-src/map/map.s: src/map/map.c.s
-.PHONY : src/map/map.s
+src/map.s: src/map.c.s
+.PHONY : src/map.s
 
 # target to generate assembly for a file
-src/map/map.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/map/map.c.s
-.PHONY : src/map/map.c.s
+src/map.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/map.c.s
+.PHONY : src/map.c.s
 
-src/mesh/mesh.obj: src/mesh/mesh.c.obj
-.PHONY : src/mesh/mesh.obj
+src/mesh.obj: src/mesh.c.obj
+.PHONY : src/mesh.obj
 
 # target to build an object file
-src/mesh/mesh.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/mesh/mesh.c.obj
-.PHONY : src/mesh/mesh.c.obj
+src/mesh.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/mesh.c.obj
+.PHONY : src/mesh.c.obj
 
-src/mesh/mesh.i: src/mesh/mesh.c.i
-.PHONY : src/mesh/mesh.i
+src/mesh.i: src/mesh.c.i
+.PHONY : src/mesh.i
 
 # target to preprocess a source file
-src/mesh/mesh.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/mesh/mesh.c.i
-.PHONY : src/mesh/mesh.c.i
+src/mesh.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/mesh.c.i
+.PHONY : src/mesh.c.i
 
-src/mesh/mesh.s: src/mesh/mesh.c.s
-.PHONY : src/mesh/mesh.s
+src/mesh.s: src/mesh.c.s
+.PHONY : src/mesh.s
 
 # target to generate assembly for a file
-src/mesh/mesh.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/mesh/mesh.c.s
-.PHONY : src/mesh/mesh.c.s
+src/mesh.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/mesh.c.s
+.PHONY : src/mesh.c.s
 
-src/network/network.obj: src/network/network.c.obj
-.PHONY : src/network/network.obj
+src/network.obj: src/network.c.obj
+.PHONY : src/network.obj
 
 # target to build an object file
-src/network/network.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/network/network.c.obj
-.PHONY : src/network/network.c.obj
+src/network.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/network.c.obj
+.PHONY : src/network.c.obj
 
-src/network/network.i: src/network/network.c.i
-.PHONY : src/network/network.i
+src/network.i: src/network.c.i
+.PHONY : src/network.i
 
 # target to preprocess a source file
-src/network/network.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/network/network.c.i
-.PHONY : src/network/network.c.i
+src/network.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/network.c.i
+.PHONY : src/network.c.i
 
-src/network/network.s: src/network/network.c.s
-.PHONY : src/network/network.s
+src/network.s: src/network.c.s
+.PHONY : src/network.s
 
 # target to generate assembly for a file
-src/network/network.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/network/network.c.s
-.PHONY : src/network/network.c.s
+src/network.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/network.c.s
+.PHONY : src/network.c.s
 
-src/shapes/ramp/ramp.obj: src/shapes/ramp/ramp.c.obj
-.PHONY : src/shapes/ramp/ramp.obj
+src/shape/ramp.obj: src/shape/ramp.c.obj
+.PHONY : src/shape/ramp.obj
 
 # target to build an object file
-src/shapes/ramp/ramp.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shapes/ramp/ramp.c.obj
-.PHONY : src/shapes/ramp/ramp.c.obj
+src/shape/ramp.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shape/ramp.c.obj
+.PHONY : src/shape/ramp.c.obj
 
-src/shapes/ramp/ramp.i: src/shapes/ramp/ramp.c.i
-.PHONY : src/shapes/ramp/ramp.i
+src/shape/ramp.i: src/shape/ramp.c.i
+.PHONY : src/shape/ramp.i
 
 # target to preprocess a source file
-src/shapes/ramp/ramp.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shapes/ramp/ramp.c.i
-.PHONY : src/shapes/ramp/ramp.c.i
+src/shape/ramp.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shape/ramp.c.i
+.PHONY : src/shape/ramp.c.i
 
-src/shapes/ramp/ramp.s: src/shapes/ramp/ramp.c.s
-.PHONY : src/shapes/ramp/ramp.s
+src/shape/ramp.s: src/shape/ramp.c.s
+.PHONY : src/shape/ramp.s
 
 # target to generate assembly for a file
-src/shapes/ramp/ramp.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shapes/ramp/ramp.c.s
-.PHONY : src/shapes/ramp/ramp.c.s
+src/shape/ramp.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shape/ramp.c.s
+.PHONY : src/shape/ramp.c.s
 
-src/shapes/shapes.obj: src/shapes/shapes.c.obj
-.PHONY : src/shapes/shapes.obj
+src/shape/solid.obj: src/shape/solid.c.obj
+.PHONY : src/shape/solid.obj
 
 # target to build an object file
-src/shapes/shapes.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shapes/shapes.c.obj
-.PHONY : src/shapes/shapes.c.obj
+src/shape/solid.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shape/solid.c.obj
+.PHONY : src/shape/solid.c.obj
 
-src/shapes/shapes.i: src/shapes/shapes.c.i
-.PHONY : src/shapes/shapes.i
+src/shape/solid.i: src/shape/solid.c.i
+.PHONY : src/shape/solid.i
 
 # target to preprocess a source file
-src/shapes/shapes.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shapes/shapes.c.i
-.PHONY : src/shapes/shapes.c.i
+src/shape/solid.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shape/solid.c.i
+.PHONY : src/shape/solid.c.i
 
-src/shapes/shapes.s: src/shapes/shapes.c.s
-.PHONY : src/shapes/shapes.s
+src/shape/solid.s: src/shape/solid.c.s
+.PHONY : src/shape/solid.s
 
 # target to generate assembly for a file
-src/shapes/shapes.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shapes/shapes.c.s
-.PHONY : src/shapes/shapes.c.s
+src/shape/solid.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shape/solid.c.s
+.PHONY : src/shape/solid.c.s
 
-src/shapes/solid/solid.obj: src/shapes/solid/solid.c.obj
-.PHONY : src/shapes/solid/solid.obj
+src/sound.obj: src/sound.c.obj
+.PHONY : src/sound.obj
 
 # target to build an object file
-src/shapes/solid/solid.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shapes/solid/solid.c.obj
-.PHONY : src/shapes/solid/solid.c.obj
+src/sound.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/sound.c.obj
+.PHONY : src/sound.c.obj
 
-src/shapes/solid/solid.i: src/shapes/solid/solid.c.i
-.PHONY : src/shapes/solid/solid.i
+src/sound.i: src/sound.c.i
+.PHONY : src/sound.i
 
 # target to preprocess a source file
-src/shapes/solid/solid.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shapes/solid/solid.c.i
-.PHONY : src/shapes/solid/solid.c.i
+src/sound.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/sound.c.i
+.PHONY : src/sound.c.i
 
-src/shapes/solid/solid.s: src/shapes/solid/solid.c.s
-.PHONY : src/shapes/solid/solid.s
+src/sound.s: src/sound.c.s
+.PHONY : src/sound.s
 
 # target to generate assembly for a file
-src/shapes/solid/solid.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/shapes/solid/solid.c.s
-.PHONY : src/shapes/solid/solid.c.s
+src/sound.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/sound.c.s
+.PHONY : src/sound.c.s
 
-src/sound/sound.obj: src/sound/sound.c.obj
-.PHONY : src/sound/sound.obj
+src/utility.obj: src/utility.c.obj
+.PHONY : src/utility.obj
 
 # target to build an object file
-src/sound/sound.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/sound/sound.c.obj
-.PHONY : src/sound/sound.c.obj
+src/utility.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/utility.c.obj
+.PHONY : src/utility.c.obj
 
-src/sound/sound.i: src/sound/sound.c.i
-.PHONY : src/sound/sound.i
-
-# target to preprocess a source file
-src/sound/sound.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/sound/sound.c.i
-.PHONY : src/sound/sound.c.i
-
-src/sound/sound.s: src/sound/sound.c.s
-.PHONY : src/sound/sound.s
-
-# target to generate assembly for a file
-src/sound/sound.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/sound/sound.c.s
-.PHONY : src/sound/sound.c.s
-
-src/utility/utility.obj: src/utility/utility.c.obj
-.PHONY : src/utility/utility.obj
-
-# target to build an object file
-src/utility/utility.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/utility/utility.c.obj
-.PHONY : src/utility/utility.c.obj
-
-src/utility/utility.i: src/utility/utility.c.i
-.PHONY : src/utility/utility.i
+src/utility.i: src/utility.c.i
+.PHONY : src/utility.i
 
 # target to preprocess a source file
-src/utility/utility.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/utility/utility.c.i
-.PHONY : src/utility/utility.c.i
+src/utility.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/utility.c.i
+.PHONY : src/utility.c.i
 
-src/utility/utility.s: src/utility/utility.c.s
-.PHONY : src/utility/utility.s
+src/utility.s: src/utility.c.s
+.PHONY : src/utility.s
 
 # target to generate assembly for a file
-src/utility/utility.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/utility/utility.c.s
-.PHONY : src/utility/utility.c.s
+src/utility.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\mingen.dir\build.make CMakeFiles/mingen.dir/src/utility.c.s
+.PHONY : src/utility.c.s
 
 # Help Target
 help:
@@ -596,60 +548,54 @@ help:
 	@echo ... lib/GLAD/glad.obj
 	@echo ... lib/GLAD/glad.i
 	@echo ... lib/GLAD/glad.s
-	@echo ... src/array/array.obj
-	@echo ... src/array/array.i
-	@echo ... src/array/array.s
+	@echo ... src/array.obj
+	@echo ... src/array.i
+	@echo ... src/array.s
 	@echo ... src/chunk.obj
 	@echo ... src/chunk.i
 	@echo ... src/chunk.s
-	@echo ... src/chunk/chunk.obj
-	@echo ... src/chunk/chunk.i
-	@echo ... src/chunk/chunk.s
-	@echo ... src/collection/collection.obj
-	@echo ... src/collection/collection.i
-	@echo ... src/collection/collection.s
-	@echo ... src/data/data.obj
-	@echo ... src/data/data.i
-	@echo ... src/data/data.s
-	@echo ... src/game/game.obj
-	@echo ... src/game/game.i
-	@echo ... src/game/game.s
-	@echo ... src/graphics/graphics.obj
-	@echo ... src/graphics/graphics.i
-	@echo ... src/graphics/graphics.s
-	@echo ... src/input/input.obj
-	@echo ... src/input/input.i
-	@echo ... src/input/input.s
-	@echo ... src/loop/loop.obj
-	@echo ... src/loop/loop.i
-	@echo ... src/loop/loop.s
+	@echo ... src/collection.obj
+	@echo ... src/collection.i
+	@echo ... src/collection.s
+	@echo ... src/data.obj
+	@echo ... src/data.i
+	@echo ... src/data.s
+	@echo ... src/game.obj
+	@echo ... src/game.i
+	@echo ... src/game.s
+	@echo ... src/graphics.obj
+	@echo ... src/graphics.i
+	@echo ... src/graphics.s
+	@echo ... src/input.obj
+	@echo ... src/input.i
+	@echo ... src/input.s
+	@echo ... src/loop.obj
+	@echo ... src/loop.i
+	@echo ... src/loop.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s
-	@echo ... src/map/map.obj
-	@echo ... src/map/map.i
-	@echo ... src/map/map.s
-	@echo ... src/mesh/mesh.obj
-	@echo ... src/mesh/mesh.i
-	@echo ... src/mesh/mesh.s
-	@echo ... src/network/network.obj
-	@echo ... src/network/network.i
-	@echo ... src/network/network.s
-	@echo ... src/shapes/ramp/ramp.obj
-	@echo ... src/shapes/ramp/ramp.i
-	@echo ... src/shapes/ramp/ramp.s
-	@echo ... src/shapes/shapes.obj
-	@echo ... src/shapes/shapes.i
-	@echo ... src/shapes/shapes.s
-	@echo ... src/shapes/solid/solid.obj
-	@echo ... src/shapes/solid/solid.i
-	@echo ... src/shapes/solid/solid.s
-	@echo ... src/sound/sound.obj
-	@echo ... src/sound/sound.i
-	@echo ... src/sound/sound.s
-	@echo ... src/utility/utility.obj
-	@echo ... src/utility/utility.i
-	@echo ... src/utility/utility.s
+	@echo ... src/map.obj
+	@echo ... src/map.i
+	@echo ... src/map.s
+	@echo ... src/mesh.obj
+	@echo ... src/mesh.i
+	@echo ... src/mesh.s
+	@echo ... src/network.obj
+	@echo ... src/network.i
+	@echo ... src/network.s
+	@echo ... src/shape/ramp.obj
+	@echo ... src/shape/ramp.i
+	@echo ... src/shape/ramp.s
+	@echo ... src/shape/solid.obj
+	@echo ... src/shape/solid.i
+	@echo ... src/shape/solid.s
+	@echo ... src/sound.obj
+	@echo ... src/sound.i
+	@echo ... src/sound.s
+	@echo ... src/utility.obj
+	@echo ... src/utility.i
+	@echo ... src/utility.s
 .PHONY : help
 
 
