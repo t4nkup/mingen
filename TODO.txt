@@ -1,4 +1,4 @@
-- draw a cube 
+- debug mesh drawing
 - get input working 
 - get gamepad input working 
 - move camera around by input 

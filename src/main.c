@@ -27,35 +27,28 @@ int main()
     _init_sound(&fn);
     _init_utility(&fn);
 
+    // initialize our graphics
+    fn.gfx.setup(&fn);
+
     // create a new game and a map to go with it
-    game *g = fn.game.new(&fn, 0, "test");
-    map *m = fn.map.new(&fn, 0, "test");
+    game* g = fn.game.new(&fn, 0, "test");
+    map* m = fn.map.new(&fn, 0, "test");
 
     // assign the map to the game
     fn.array.add(g->mapIDs, 1, (int[]) { m->ID });
     fn.array.add(g->maps, 1, (map[]) { *m });
 
     // create a new chunk for the map
-    chunk *c = fn.chunk.new(&fn, 0, 0, 0);
-    fn.array.add(c->mesh->vertex, 12, (float[]){
-        -1.0f, -1.0f, 0.0f,  
-        -1.0f, 1.0f, 0.0f,  
-        1.0f, 1.0f, 0.0f,
-        1.0f, 0.0f, 0.0f
-    });
-    fn.array.add(c->mesh->index, 6, (int[]){
-        0, 1, 2,
-        0, 2, 3
-    });
+    chunk* c = fn.chunk.new(&fn, 0, 0, 0);
+
     fn.array.add(m->chunks, 1, (chunk[]){ *c });
 
     fn.data.game = g;
     fn.data.map = m;
 
 
-    // start our loop and create our openGL window
+    // start our game loop
     fn.loop.start(&fn);
-    fn.gfx.setup(&fn);
 
     // cleanup
     fn.gfx.unload(&fn);

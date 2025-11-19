@@ -6,7 +6,7 @@
 
 static array* _array_new(int length, int size)
 {
-    array *a = malloc(sizeof(array));
+    array* a = malloc(sizeof(array));
     a->length = length;
     a->size = size;
     a->data = malloc(length * size);
@@ -17,58 +17,59 @@ static array* _array_new(int length, int size)
 //  ADD:  adds more elements to the array resizing it in the process
 //
 
-static void _array_add(array *array, int length, void *data)
+static void _array_add(array* a, int length, void* data)
 {
-    array->data = realloc(array->data, (array->length + length) * array->size);
-    memcpy(array->data + (array->length * array->size), data, length * array->size);
-    array->length += length;
+    a->data = realloc(a->data, (a->length + length) * a->size);
+    memcpy(a->data + (a->length * a->size), data, length * a->size);
+    a->length += length;
 }
 
 //
 //  SET:  assigns a new piece of data at index
 //
 
-static void _array_set(array *array, int index, int length, void *data)
+static void _array_set(array* a, int index, int length, void* data)
 {
-    memcpy(array->data + (index * array->size), data, length * array->size);
+    memcpy(a->data + (index * a->size), data, length * a->size);
 }
 
 //
 //  REMOVE:  removes an element in the array at index
 //
 
-static void _array_remove(array *array, int index, int length)
+static void _array_remove(array* a, int index, int length)
 {
-    memcpy(array->data + (index * array->size), array->data + ((index + length) * array->size), (array->length - length) * array->size);
-    array->length -= length;
+    memcpy(a->data + (index * a->size), a->data + ((index + length) * a->size), (a->length - length) * a->size);
+    a->length -= length;
 }
 
 //
 //  RESIZE:  resizes an array to a new length
 //
 
-static void _array_resize(array *array, int length)
+static void _array_resize(array* a, int length)
 {
-    array->length = length;
-    array->data = realloc(array->data, length * array->size);
+    a->length = length;
+    a->data = realloc(a->data, length * a->size);
 }
 
 //
 //  FREE:  frees up the array memory
 //
 
-static void _array_free(array *array)
+static void _array_free(array* a)
 {
-    free(array->data);
-    free(array);
+    free(a->data);
+    free(a);
 }
 
 //
 //  ARRAY.C:    a helper module for managing arrays
 //              we can have an array of primitives and also custom 
 //              types such as component
+//
 
-void _init_array(FN *fn)
+void _init_array(FN* fn)
 {
     fn->array.new = &_array_new;
     fn->array.add = &_array_add;

@@ -1,8 +1,8 @@
 #include "../include/mingen.h"
 
-static game* _game_new(FN *fn, int ID, char *name)
+static game* _game_new(FN* fn, int ID, char* name)
 {
-    game *g = malloc(sizeof(game));
+    game* g = malloc(sizeof(game));
     g->ID = ID;
     g->name = name;
     g->mapIDs = fn->array.new(0, sizeof(int));
@@ -10,12 +10,12 @@ static game* _game_new(FN *fn, int ID, char *name)
     return g;
 }
 
-static void _game_load(FN *fn)
+static void _game_load(FN* fn)
 {
 
 }
 
-static void _game_unload(FN *fn)
+static void _game_unload(FN* fn)
 {
     
 }
@@ -25,7 +25,7 @@ static void _game_unload(FN *fn)
 //              which is a "minigame" that a user creates with mingen
 //
 
-void _init_game(FN *fn)
+void _init_game(FN* fn)
 {
     fn->game.new = &_game_new;
     fn->game.load = &_game_load;
