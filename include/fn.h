@@ -55,10 +55,9 @@ struct FN
 
     struct _graphics 
     {
-        unsigned int VAO;
-
         GLFWwindow* window;
         unsigned int shader;
+
         void (*setup) (FN* fn);
         void (*render) (FN* fn);
         void (*unload) (FN* fn);
@@ -67,13 +66,17 @@ struct FN
 
     struct _input 
     {
+        button A;
 
+        void (*read) (FN* fn);
     } 
     input;
     
     struct _loop 
     {
         int isPaused;
+        double current, previous, delta;
+
         void (*start) (FN* fn);
         void (*stop) (FN* fn);
         void (*tick) (FN* fn);

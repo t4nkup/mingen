@@ -1,7 +1,18 @@
-- debug mesh drawing
-- get input working 
+
+- press a button and update mesh VBO
+    - initialize the mesh with a VBO of size 0 at start
+    - allow the owner of the mesh to update it later (chunk)
+    - keep track of the VBO size manually and use glBufferData or glBufferSubData correctly
+    - for chunks start off with a large VBO buffer (5MB) so reallocations happen cheaply
+
+- draw a cube from "CUBE" shape
+
+- figure out how to create a camera
+
 - get gamepad input working 
+
 - move camera around by input 
 
 - get a collision setup on the chunk
+
 - when pressing A on the chunk add a new cube to it

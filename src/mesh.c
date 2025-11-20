@@ -35,10 +35,10 @@ static mesh* _mesh_new(FN* fn)
 
     // fill our VBO with our vertex data
     glBindBuffer(GL_ARRAY_BUFFER, m->VBO);
-    glBufferData(GL_ARRAY_BUFFER, m->vertex->length * sizeof(float), m->vertex->data, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, m->vertex->length * sizeof(float), m->vertex->data, GL_DYNAMIC_DRAW);
     // fill our EBO with our index data
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, m->EBO);
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, m->index->length * sizeof(int), m->index->data, GL_STATIC_DRAW);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, m->index->length * sizeof(int), m->index->data, GL_DYNAMIC_DRAW);
 
     // setup our attribute pointer for our VBO
     // this tells openGL how it can read our VBO data (position, color, uv, normal, etc etc)

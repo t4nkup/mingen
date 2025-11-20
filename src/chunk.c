@@ -22,11 +22,18 @@ static chunk* _chunk_new(FN* fn, int x, int y, int z)
 
 static void _chunk_build(FN* fn, chunk* chunk)
 {
-    // chunk->mesh.vertices[9] = {
-    //     -1.0f, -1.0f, 0.0f,  
-    //      1.5f, -0.5f, 0.0f,  
-    //      0.0f,  0.5f, 0.0f  
-    // };
+    mesh* m = chunk->mesh;
+
+    fn->array.set(m->vertex, 0, 12, (float[]){
+        -0.5f, -1.5f, 0.0f, 
+        -0.5f,  7.5f, 0.0f,  
+         0.5f,  0.5f, 0.0f,  
+         0.5f, -3.5f, 0.0f  
+    });
+
+    // update our VBO with the new data
+    glBindBuffer(GL_ARRAY_BUFFER, m->VBO);
+    glBufferSubData(GL_ARRAY_BUFFER, 0, m->vertex->length * sizeof(float), m->vertex->data);
 }
 
 //

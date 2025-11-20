@@ -1,17 +1,27 @@
 #include "../include/mingen.h"
 
-static void _graphics_error(int error, const char* description) { }
+//
+//  ERROR:  print any errors GLFW throws at us
+//
 
-static void _graphics_key_callback(GLFWwindow* window, int key, int scancode, int action, int mods)
-{
-    if (key == GLFW_KEY_ESCAPE && action == GLFW_PRESS)
-    { glfwSetWindowShouldClose(window, GLFW_TRUE); }
+static void _graphics_error(int error, const char* description) 
+{ 
+    fprintf(stderr, "GLFW Error %d: %s\n", error, description);
 }
+
+//
+//  FRAMEBUFFER_RESIZE:  whenever the GLFW window is created or resized this gets called
+//                       when this happens we need to tell openGL what our new viewport sizes are
+//
 
 static void _graphics_framebuffer_resize(GLFWwindow* window, int width, int height)
 {
     glViewport(0, 0, width, height);
 }
+
+//
+//  COMPILE_SHADERS:  reads our shaders in /src/shader/ and compiles them for use in openGL
+//
 
 static void _graphics_compile_shaders(FN* fn)
 {
@@ -37,9 +47,14 @@ static void _graphics_compile_shaders(FN* fn)
     glDeleteShader(fshader); free (fdata);
     glDeleteShader(vshader); free (vdata);
 
-    // store our shader for future use
+    // store our shader program for future use
     fn->gfx.shader = sprogram;
 }
+
+//
+//  SETUP:  called when program is started, it will setup our window,
+//          the openGL callbacks, load GLAD, and compile our shaders
+//
 
 static void _graphics_setup(FN* fn)
 {
@@ -51,11 +66,9 @@ static void _graphics_setup(FN* fn)
 
     // create the GLFW window
     fn->gfx.window = glfwCreateWindow(640, 480, "My Title", NULL, NULL);
-    if (!fn->gfx.window) { }
-    glfwMakeContextCurrent(fn->gfx.window);
 
-    // capture window input
-    glfwSetKeyCallback(fn->gfx.window, _graphics_key_callback);
+    // make it the current context
+    glfwMakeContextCurrent(fn->gfx.window);
 
     // set our window resize callback
     glfwSetFramebufferSizeCallback(fn->gfx.window, _graphics_framebuffer_resize);
@@ -70,6 +83,11 @@ static void _graphics_setup(FN* fn)
     _graphics_compile_shaders(fn);
 }
 
+//
+//  RENDER:  gets called every frame, this is what actually draws all of our shapes
+//           to the window with openGL
+//
+
 static void _graphics_render(FN* fn)
 {
     // and here we render
@@ -79,26 +97,26 @@ static void _graphics_render(FN* fn)
     // to draw an object we have to set the correct shader
     glUseProgram(fn->gfx.shader);
 
-    // loop over our current map chunks and draw their meshs
+    // loop over our current maps chunks and draw their meshs
     for(int i = 0; i < fn->data.map->chunks->length; i++)
     {
         chunk* c = GET(fn->data.map->chunks, chunk, i);
         fn->chunk.draw(fn, c);
     }
-
-    glfwSwapBuffers(fn->gfx.window);
-    glfwPollEvents();
 }
+
+//
+//  UNLOAD:  we call this before we close the window
+//
 
 static void _graphics_unload(FN* fn)
 {
-    // get rid of the GLFW window and instance
     glfwDestroyWindow(fn->gfx.window);
     glfwTerminate();
 }
 
 //
-//  GRAPHICS.C:  handles all of our openGL rendering
+//  GRAPHICS.C:  handles all of our GLFW functions and openGL rendering
 //
 
 void _init_graphics(FN* fn)

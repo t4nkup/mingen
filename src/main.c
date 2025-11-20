@@ -6,8 +6,7 @@
 
 int main()
 {
-    // declare our "manager" struct, this will be passed around 
-    // everywhere by reference so we can easily access our modules
+    // declare our "manager" struct
     FN fn; 
 
     // initialize our modules
@@ -22,10 +21,12 @@ int main()
     _init_map(&fn);
     _init_mesh(&fn);
     _init_network(&fn);
-    _init_shape_solid(&fn);
-    _init_shape_ramp(&fn);
     _init_sound(&fn);
     _init_utility(&fn);
+
+    // initialize our shapes
+    _init_shape_solid(&fn);
+    _init_shape_ramp(&fn);
 
     // initialize our graphics
     fn.gfx.setup(&fn);
