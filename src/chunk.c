@@ -13,6 +13,8 @@ static chunk* _chunk_new(FN* fn, int x, int y, int z)
     c->y = y;
     c->z = z;
     c->mesh = fn->mesh.new(fn);
+    //c->shapes = fn->grid.new(10);
+    //c->shapes->data[0][0][0] = fn->shape.cube.new(0, 0);
     return c;
 }
 
@@ -24,16 +26,55 @@ static void _chunk_build(FN* fn, chunk* chunk)
 {
     mesh* m = chunk->mesh;
 
-    fn->array.set(m->vertex, 0, 12, (float[]){
+    fn->array.add(m->vertex, 12, (float[]){
         -0.5f, -1.5f, 0.0f, 
-        -0.5f,  7.5f, 0.0f,  
-         0.5f,  0.5f, 0.0f,  
-         0.5f, -3.5f, 0.0f  
+        -0.5f,  0.5f, 0.0f, 
+         0.5f,  0.5f, 0.0f, 
+         0.5f, -0.5f, 0.0f 
     });
 
-    // update our VBO with the new data
+    fn->array.add(m->index, 6, (int[]){
+        0, 1, 2,
+        0, 2, 3
+    });
+
+    // bind our VBO for the new data
     glBindBuffer(GL_ARRAY_BUFFER, m->VBO);
-    glBufferSubData(GL_ARRAY_BUFFER, 0, m->vertex->length * sizeof(float), m->vertex->data);
+
+    if (m->vertex->length * sizeof(float) > m->VBOSize)
+    {
+        // for chunks we make sure the default size is 50k verts to prevent reallocations every time a shape is changed
+        // 48 bytes per vert = 2.4MB a chunk
+        int s = 50000 * 48 * sizeof(float); if (s < m->vertex->length * sizeof(float)) { s = m->vertex->length * sizeof(float); }
+
+        // our current buffer is too small for the new data so allocate a new area in GPU memory
+        glBufferData(GL_ARRAY_BUFFER, m->vertex->length * sizeof(float), m->vertex->data, GL_DYNAMIC_DRAW);
+
+        // buffer overflow so update the new buffer size
+        m->VBOSize = s;
+    }
+    else
+    {
+        // our current buffer has sufficient space so we just upload data with no reallocation
+        glBufferSubData(GL_ARRAY_BUFFER, 0, m->vertex->length * sizeof(float), m->vertex->data);
+    }
+
+    if (m->index->length * sizeof(int) > m->EBOSize)
+    {
+        // for chunks we make sure the default size is 50k verts to prevent reallocations every time a shape is changed
+        int s = 50000 * 36 * sizeof(int); if (s < m->index->length * sizeof(int)) { s = m->index->length * sizeof(int); }
+
+        // our current buffer is too small for the new data so allocate a new area in GPU memory
+        glBufferData(GL_ELEMENT_ARRAY_BUFFER, m->index->length * sizeof(int), m->index->data, GL_DYNAMIC_DRAW);
+
+        // buffer overflow so update the new buffer size
+        m->EBOSize = s;
+    }
+    else
+    {
+        // our current buffer has sufficient space so we just upload data with no reallocation
+        glBufferSubData(GL_ELEMENT_ARRAY_BUFFER, 0, m->index->length * sizeof(int), m->index->data);
+    }
 }
 
 //

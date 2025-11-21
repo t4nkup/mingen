@@ -12,10 +12,11 @@ int main()
     // initialize our modules
     _init_array(&fn);
     _init_chunk(&fn);
-    _init_collection(&fn);
     _init_data(&fn);
     _init_game(&fn);
     _init_graphics(&fn);
+    _init_grid(&fn);
+    _init_hash(&fn);
     _init_input(&fn);
     _init_loop(&fn);
     _init_map(&fn);
@@ -25,7 +26,7 @@ int main()
     _init_utility(&fn);
 
     // initialize our shapes
-    _init_shape_solid(&fn);
+    _init_shape_cube(&fn);
     _init_shape_ramp(&fn);
 
     // initialize our graphics

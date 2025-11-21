@@ -1,11 +1,9 @@
-
-- press a button and update mesh VBO
-    - initialize the mesh with a VBO of size 0 at start
-    - allow the owner of the mesh to update it later (chunk)
-    - keep track of the VBO size manually and use glBufferData or glBufferSubData correctly
-    - for chunks start off with a large VBO buffer (5MB) so reallocations happen cheaply
+- get a hashtable built
+    - use a UUID as key
+    - use a int3 for key (for chunk grid)
 
 - draw a cube from "CUBE" shape
+    - build a "stream" module where we can build an array dynamically
 
 - figure out how to create a camera
 

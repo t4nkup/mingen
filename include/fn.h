@@ -32,12 +32,6 @@ struct FN
     } 
     chunk;
 
-    struct _collection 
-    {
-
-    } 
-    collection;
-
     struct _data 
     {
         game* game;
@@ -63,6 +57,23 @@ struct FN
         void (*unload) (FN* fn);
     } 
     gfx;
+
+    struct _grid 
+    {
+        grid* (*new) (int size);
+        void (*add) (grid* array, int length, void* data);
+        void (*set) (grid* array, int index, int length, void* data);
+        void (*remove) (grid* array, int index, int length);
+        void (*resize) (grid* array, int length);
+        void (*free) (grid* array);
+    } 
+    grid;
+
+    struct _hash
+    {
+        hash* (*new) ();
+    }
+    hash;
 
     struct _input 
     {
@@ -108,7 +119,7 @@ struct FN
 
     struct _shape
     {
-        struct solid { void (*build) (FN* fn); } solid;
+        struct cube { void* (*new) (int material, int orientation); void (*build) (FN* fn); } cube;
         struct ramp { void (*build) (FN* fn); } ramp;
     } 
     shape;
