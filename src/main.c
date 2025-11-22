@@ -13,16 +13,17 @@ int main()
     _init_array(&fn);
     _init_chunk(&fn);
     _init_data(&fn);
+    _init_free(&fn);
     _init_game(&fn);
     _init_graphics(&fn);
     _init_grid(&fn);
-    _init_hash(&fn);
     _init_input(&fn);
     _init_loop(&fn);
     _init_map(&fn);
     _init_mesh(&fn);
     _init_network(&fn);
     _init_sound(&fn);
+    _init_table(&fn);
     _init_utility(&fn);
 
     // initialize our shapes

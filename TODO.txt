@@ -1,6 +1,6 @@
-- get a hashtable built
-    - use a UUID as key
-    - use a int3 for key (for chunk grid)
+- build "free.c"
+
+- test out the new array, grid, and hashtable modules
 
 - draw a cube from "CUBE" shape
     - build a "stream" module where we can build an array dynamically

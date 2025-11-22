@@ -26,8 +26,8 @@ static void _graphics_framebuffer_resize(GLFWwindow* window, int width, int heig
 static void _graphics_compile_shaders(FN* fn)
 {
     // get our shader data from file
-    char* fdata = fn->util.readfile("src/shader/fragment.shader");
-    char* vdata = fn->util.readfile("src/shader/vertex.shader");
+    char* fdata = fn->readfile("src/shader/fragment.shader");
+    char* vdata = fn->readfile("src/shader/vertex.shader");
 
     // have openGL compile the shaders
     unsigned int fshader, vshader;
@@ -98,7 +98,7 @@ static void _graphics_render(FN* fn)
     glUseProgram(fn->gfx.shader);
 
     // loop over our current maps chunks and draw their meshs
-    for(int i = 0; i < fn->data.map->chunks->length; i++)
+    for(int i = 0; i < fn->data.map->chunks->count; i++)
     {
         chunk* c = GET(fn->data.map->chunks, chunk, i);
         fn->chunk.draw(fn, c);

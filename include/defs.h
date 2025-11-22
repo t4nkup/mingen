@@ -6,15 +6,17 @@
 typedef struct array array;
 typedef struct button button;
 typedef struct chunk chunk;
+typedef struct entry entry;
 typedef struct float3 float3;
 typedef struct game game;
 typedef struct grid grid;
-typedef struct hash hash;
 typedef struct int3 int3;
 typedef struct map map;
 typedef struct mesh mesh;
 typedef struct shape shape;
+typedef struct table table;
 typedef struct transform transform;
+typedef struct uid uid;
 
 //
 //  ARRAY:  a list of data, it can be a list of a primitive type or a struct such as component
@@ -23,7 +25,7 @@ typedef struct transform transform;
 typedef struct array
 { 
     unsigned char type;         // the struct "type" which we can read with void pointer
-    int length;                 // how many elements are in the array
+    int count;                  // how many elements are in the array
     int size;                   // how many bytes each element uses
     void* data;                 // a void pointer to the start of the array in memory
 } 
@@ -56,9 +58,22 @@ typedef struct chunk
     int loaded;                 // whether the chunk is currently loaded
     int x, y, z;                // represents the world position of the chunk
     mesh* mesh;                 // each chunk will have a mesh that is a combination of its shapes
-    void**** shape;             // a grid of shapes indexed by their xyz position in the chunk
+    grid* shape;                 // a grid of shapes indexed by their xyz position in the chunk
 } 
 chunk;
+
+//
+//  ENTRY:  an "entry" for our hashtable implementation
+//
+
+typedef struct entry
+{
+    unsigned char type;         // the struct "type" which we can read with void pointer
+    int state;                  // 0 = empty, 1 = used, -1 = deleted
+    uid* key;                   // the key for this entry
+    void* data;                 // the void pointer for this entries value
+} 
+entry;
 
 //
 //  FLOAT3:  3 floats (xyz) for world positions, transforms, etc
@@ -99,16 +114,6 @@ typedef struct grid
 grid;
 
 //
-//  HASH:  a hashtable where we can store object data with keys
-//
-
-typedef struct hash
-{
-
-}
-hash;
-
-//
 //  INT3:  3 integers (xyz) for world positions, etc
 //
 
@@ -135,7 +140,7 @@ typedef struct map
     int scale;                  // how many nodes per chunk
 
     array*** grid;              // a multidimensional array which holds an array of object IDs indexed by position
-    grid objects;               // a collection of all the objects assigned to this map
+    grid* objects;              // a collection of all the objects assigned to this map
 
     array* chunks;              // an array of all the chunks assigned to the map
 }
@@ -174,11 +179,24 @@ mesh;
 typedef struct shape
 {
     unsigned char type;         // the struct "type" which we can read with void pointer
-    int ID;                     // what type of shape it is
+    unsigned char ID;           // what type of shape it is
     int material;               // what texture the shape will use
     int orientation;            // what orientation (rotation) the shape will display in
 }
 shape;
+
+//
+//  TABLE:  a hashtable where we can store object data with keys
+//
+
+typedef struct table
+{
+    unsigned char type;         // the struct "type" which we can read with void pointer
+    int count;                  // how many elements are in the hashtable
+    int max;                    // the max # of elements the hashtable can currently hold
+    entry* entry;               // an array of entries
+}
+table;
 
 //
 //  TRANSFORM:  a transform is a combination of position/rotation/scale 
@@ -188,10 +206,21 @@ shape;
 typedef struct transform
 {
     unsigned char type;         // the struct "type" which we can read with void pointer
-    float3 position;            // the xyz world position
-    float3 rotation;            // the xyz euler rotation of the object
-    float3 scale;               // the xyz scale of the object
+    float3* position;           // the xyz world position
+    float3* rotation;           // the xyz euler rotation of the object
+    float3* scale;              // the xyz scale of the object
 }
 transform;
+
+//
+//  UID:  a 16 byte slice of data that guarantees to be unique which we will use for keys
+//
+
+typedef struct uid
+{
+    unsigned char type;         // the struct "type" which we can read with void pointer
+    uint8_t data[16];           // 16 bytes to guarantee uniqueness
+} 
+uid;
 
 #endif

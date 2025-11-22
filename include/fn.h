@@ -61,19 +61,11 @@ struct FN
     struct _grid 
     {
         grid* (*new) (int size);
-        void (*add) (grid* array, int length, void* data);
-        void (*set) (grid* array, int index, int length, void* data);
-        void (*remove) (grid* array, int index, int length);
-        void (*resize) (grid* array, int length);
-        void (*free) (grid* array);
+        void (*set) (FN* fn, grid* grid, int x, int y, int z, void* data);
+        void* (*get) (grid* grid, int x, int y, int z);
+        void (*remove) (FN* fn, grid* grid, int x, int y, int z);
     } 
     grid;
-
-    struct _hash
-    {
-        hash* (*new) ();
-    }
-    hash;
 
     struct _input 
     {
@@ -130,15 +122,23 @@ struct FN
     } 
     sound;
 
-    struct _utility 
+    struct _table
     {
-        void (*log) (char* message);
-        void (*logint) (int value);
-        void (*logfloat) (float value);
-        void (*logarray) (array* array, array_type type);
-        char* (*readfile) (char* filename);
-    } 
-    util;
+        table* (*new) (int max);
+        uint32_t (*hash) (uid* uid);
+        int (*compare) (uid* a, uid* b);
+        void (*insert) (table* table, uid* uid, void* data);
+        void* (*get) (table* table, uid* key);
+        void (*remove) (table* table, uid* key);
+    }
+    table;
+
+    void (*free) (void* object);
+    void (*log) (char* message);
+    void (*logint) (int value);
+    void (*logfloat) (float value);
+    void (*logarray) (array* array, array_type type);
+    char* (*readfile) (char* filename);
 };
 
 #endif

@@ -21,53 +21,32 @@ static grid* _grid_new(int size)
 }
 
 //
-//  ADD:  adds more elements to the grid resizing it in the process
+//  SET:  assigns a new piece of data at index
 //
 
-// static void _grid_add(grid* a, int length, void* data)
-// {
-//     a->data = realloc(a->data, (a->length + length) * a->size);
-//     memcpy(a->data + (a->length * a->size), data, length * a->size);
-//     a->length += length;
-// }
-
-// //
-// //  SET:  assigns a new piece of data at index
-// //
-
-// static void _grid_set(grid* a, int index, int length, void* data)
-// {
-//     memcpy(a->data + (index * a->size), data, length * a->size);
-// }
-
-// //
-// //  REMOVE:  removes an element in the grid at index
-// //
-
-// static void _grid_remove(grid* a, int index, int length)
-// {
-//     memcpy(a->data + (index * a->size), a->data + ((index + length) * a->size), (a->length - length) * a->size);
-//     a->length -= length;
-// }
-
-// //
-// //  RESIZE:  resizes an grid to a new length
-// //
-
-// static void _grid_resize(grid* a, int length)
-// {
-//     a->length = length;
-//     a->data = realloc(a->data, length * a->size);
-// }
-
-//
-//  FREE:  frees up the grid memory
-//
-
-static void _grid_free(grid* a)
+static void _grid_set(FN* fn, grid* g, int x, int y, int z, void* data)
 {
-    free(a->data);
-    free(a);
+    fn->free(g->data[x][y][z]);
+    g->data[x][y][z] = data;
+}
+
+//
+//  GET:  returns the pointer at index
+//
+
+static void* _grid_get(grid* g, int x, int y, int z)
+{
+    return g->data[x][y][z];
+}
+
+//
+//  REMOVE:  removes an element in the grid at index
+//
+
+static void _grid_remove(FN* fn, grid* g, int x, int y, int z)
+{
+    fn->free(g->data[x][y][z]);
+    g->data[x][y][z] = NULL;
 }
 
 //
@@ -79,9 +58,7 @@ static void _grid_free(grid* a)
 void _init_grid(FN* fn)
 {
     fn->grid.new = &_grid_new;
-    // fn->grid.add = &_grid_add;
-    // fn->grid.set = &_grid_set;
-    // fn->grid.remove = &_grid_remove;
-    // fn->grid.resize = &_grid_resize;
-    fn->grid.free = &_grid_free;
+    fn->grid.set = &_grid_set;
+    fn->grid.get = &_grid_get;
+    fn->grid.remove = &_grid_remove;
 }

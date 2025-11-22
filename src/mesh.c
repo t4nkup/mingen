@@ -50,7 +50,7 @@ static mesh* _mesh_new(FN* fn)
 static void _mesh_draw(FN* fn, mesh* m)
 {
     glBindVertexArray(m->VAO);
-    glDrawElements(GL_TRIANGLES, m->index->length, GL_UNSIGNED_INT, 0);
+    glDrawElements(GL_TRIANGLES, m->index->count, GL_UNSIGNED_INT, 0);
 }
 
 //

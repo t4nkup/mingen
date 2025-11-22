@@ -52,13 +52,13 @@ static void _loop_tick(FN* fn)
 
     // process logic
     if (fn->input.A.pressed) { 
-        fn->util.log("A pressed"); 
+        fn->log("A pressed"); 
     
         chunk* c = GET(fn->data.map->chunks, chunk, 0);
         fn->chunk.build(fn, c);
     
     }
-    if (fn->input.A.down && fn->input.A.timer > 0.2) { fn->util.log("A was held"); }
+    if (fn->input.A.down && fn->input.A.timer > 0.2) { fn->log("A was held"); }
 
     // render graphics
     fn->gfx.render(fn);
