@@ -137,7 +137,7 @@ struct FN
     void (*log) (char* message);
     void (*logint) (int value);
     void (*logfloat) (float value);
-    void (*logarray) (array* array, array_type type);
+    void (*logarray) (array* array);
     char* (*readfile) (char* filename);
 };
 

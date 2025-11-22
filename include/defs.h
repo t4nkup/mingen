@@ -24,7 +24,7 @@ typedef struct uid uid;
 
 typedef struct array
 { 
-    unsigned char type;         // the struct "type" which we can read with void pointer
+    type type;                  // the struct "type" which we can read with void pointer
     int count;                  // how many elements are in the array
     int size;                   // how many bytes each element uses
     void* data;                 // a void pointer to the start of the array in memory
@@ -37,7 +37,7 @@ array;
 
 typedef struct button
 { 
-    unsigned char type;         // the struct "type" which we can read with void pointer
+    type type;                  // the struct "type" which we can read with void pointer
     bool pressed;               // true on the frame that a button was pressed (less than 0.2s)
     bool up;                    // true on the frame that a button was released
     bool down;                  // true all frames where button is down
@@ -53,7 +53,7 @@ button;
 
 typedef struct chunk
 { 
-    unsigned char type;         // the struct "type" which we can read with void pointer
+    type type;                  // the struct "type" which we can read with void pointer
     int busy;                   // whether the chunk is currently drawing
     int loaded;                 // whether the chunk is currently loaded
     int x, y, z;                // represents the world position of the chunk
@@ -68,7 +68,7 @@ chunk;
 
 typedef struct entry
 {
-    unsigned char type;         // the struct "type" which we can read with void pointer
+    type type;                  // the struct "type" which we can read with void pointer
     int state;                  // 0 = empty, 1 = used, -1 = deleted
     uid* key;                   // the key for this entry
     void* data;                 // the void pointer for this entries value
@@ -81,7 +81,7 @@ entry;
 
 typedef struct float3 
 { 
-    unsigned char type;         // the struct "type" which we can read with void pointer
+    type type;                  // the struct "type" which we can read with void pointer
     float x, y, z;              // the XYZ variables for the float3
 } 
 float3;
@@ -92,7 +92,7 @@ float3;
 
 typedef struct game
 {
-    unsigned char type;         // the struct "type" which we can read with void pointer
+    type type;                  // the struct "type" which we can read with void pointer
     int ID;                     // the ID of the game
     char* name;                 // a string to name the game with
 
@@ -107,7 +107,7 @@ game;
 
 typedef struct grid
 { 
-    unsigned char type;         // the struct "type" which we can read with void pointer
+    type type;                  // the struct "type" which we can read with void pointer
     int size;                   // how big our grid will be, ex: 10x10x10
     void**** data;              // a 3D void pointer for each element that we can access with data[0][0][0]
 } 
@@ -119,7 +119,7 @@ grid;
 
 typedef struct int3 
 { 
-    unsigned char type;         // the struct "type" which we can read with void pointer
+    type type;                  // the struct "type" which we can read with void pointer
     int x, y, z;                // the XYZ variables for the int3
 } 
 int3;
@@ -131,7 +131,7 @@ int3;
 
 typedef struct map
 {
-    unsigned char type;         // the struct "type" which we can read with void pointer
+    type type;                  // the struct "type" which we can read with void pointer
     int ID;                     // an ID for the map
     char* name;                 // a string to name the map with
 
@@ -156,7 +156,7 @@ typedef struct mesh
     // a "vertex buffer object", these objects live in the GPU.  when we tell openGL to create them for our mesh
     // it will return an integer that represents the object which we will use whenever we need to update/draw the mesh
 
-    unsigned char type;         // the struct "type" which we can read with void pointer
+    type type;                  // the struct "type" which we can read with void pointer
 
     unsigned int VAO;           // an ID that openGL gives us that points to our vertex array object for this mesh
     unsigned int VBO;           // an ID that openGL gives us that points to our vertex buffer object for this mesh
@@ -178,8 +178,8 @@ mesh;
 
 typedef struct shape
 {
-    unsigned char type;         // the struct "type" which we can read with void pointer
-    unsigned char ID;           // what type of shape it is
+    type type;                  // the struct "type" which we can read with void pointer
+    type ID;                    // what type of shape it is
     int material;               // what texture the shape will use
     int orientation;            // what orientation (rotation) the shape will display in
 }
@@ -191,7 +191,7 @@ shape;
 
 typedef struct table
 {
-    unsigned char type;         // the struct "type" which we can read with void pointer
+    type type;                  // the struct "type" which we can read with void pointer
     int count;                  // how many elements are in the hashtable
     int max;                    // the max # of elements the hashtable can currently hold
     entry* entry;               // an array of entries
@@ -205,7 +205,7 @@ table;
 
 typedef struct transform
 {
-    unsigned char type;         // the struct "type" which we can read with void pointer
+    type type;                  // the struct "type" which we can read with void pointer
     float3* position;           // the xyz world position
     float3* rotation;           // the xyz euler rotation of the object
     float3* scale;              // the xyz scale of the object
@@ -218,7 +218,7 @@ transform;
 
 typedef struct uid
 {
-    unsigned char type;         // the struct "type" which we can read with void pointer
+    type type;                  // the struct "type" which we can read with void pointer
     uint8_t data[16];           // 16 bytes to guarantee uniqueness
 } 
 uid;

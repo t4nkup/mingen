@@ -22,10 +22,10 @@ static void _utility_logfloat(float value) { printf("%f\n", value); }
 //  LOGARRAY:  takes an array and prints each element to the console
 //
 
-static void _utility_logarray(array*array, array_type type)
+static void _utility_logarray(array*array)
 {
-    if (type == INT) { int* arr = (int*) array->data; for(int i = 0; i < array->count; i++) { _utility_logint(arr[i]); } }
-    if (type == FLOAT) { float* arr = (float*) array->data; for(int i = 0; i < array->count; i++) { _utility_logfloat(arr[i]); } }
+    // if (type == INT) { int* arr = (int*) array->data; for(int i = 0; i < array->count; i++) { _utility_logint(arr[i]); } }
+    // if (type == FLOAT) { float* arr = (float*) array->data; for(int i = 0; i < array->count; i++) { _utility_logfloat(arr[i]); } }
 }
 
 //
