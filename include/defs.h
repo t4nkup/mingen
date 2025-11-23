@@ -7,26 +7,25 @@ typedef struct array array;
 typedef struct button button;
 typedef struct chunk chunk;
 typedef struct entry entry;
-typedef struct float3 float3;
 typedef struct game game;
 typedef struct grid grid;
-typedef struct int3 int3;
+typedef struct list list;
 typedef struct map map;
 typedef struct mesh mesh;
 typedef struct shape shape;
 typedef struct table table;
 typedef struct transform transform;
-typedef struct uid uid;
 
 //
-//  ARRAY:  a list of data, it can be a list of a primitive type or a struct such as component
+//  ARRAY:  a list of data for primitive types
 //
 
 typedef struct array
 { 
-    type type;                  // the struct "type" which we can read with void pointer
+    type type; 
     int count;                  // how many elements are in the array
-    int size;                   // how many bytes each element uses
+    int size;                   // the current allocated size of the array
+    int byte;                   // how many bytes each element uses
     void* data;                 // a void pointer to the start of the array in memory
 } 
 array;
@@ -37,7 +36,7 @@ array;
 
 typedef struct button
 { 
-    type type;                  // the struct "type" which we can read with void pointer
+    type type;
     bool pressed;               // true on the frame that a button was pressed (less than 0.2s)
     bool up;                    // true on the frame that a button was released
     bool down;                  // true all frames where button is down
@@ -53,12 +52,12 @@ button;
 
 typedef struct chunk
 { 
-    type type;                  // the struct "type" which we can read with void pointer
+    type type;
     int busy;                   // whether the chunk is currently drawing
     int loaded;                 // whether the chunk is currently loaded
     int x, y, z;                // represents the world position of the chunk
     mesh* mesh;                 // each chunk will have a mesh that is a combination of its shapes
-    grid* shape;                 // a grid of shapes indexed by their xyz position in the chunk
+    grid* shape;                // a grid of shapes indexed by their xyz position in the chunk
 } 
 chunk;
 
@@ -68,23 +67,12 @@ chunk;
 
 typedef struct entry
 {
-    type type;                  // the struct "type" which we can read with void pointer
+    type type;
     int state;                  // 0 = empty, 1 = used, -1 = deleted
-    uid* key;                   // the key for this entry
+    uid key;                    // the key for this entry
     void* data;                 // the void pointer for this entries value
 } 
 entry;
-
-//
-//  FLOAT3:  3 floats (xyz) for world positions, transforms, etc
-//
-
-typedef struct float3 
-{ 
-    type type;                  // the struct "type" which we can read with void pointer
-    float x, y, z;              // the XYZ variables for the float3
-} 
-float3;
 
 //
 //  GAME:  a "game" that a user creates and other players can join.
@@ -92,12 +80,10 @@ float3;
 
 typedef struct game
 {
-    type type;                  // the struct "type" which we can read with void pointer
+    type type;
     int ID;                     // the ID of the game
     char* name;                 // a string to name the game with
-
-    array* mapIDs;              // an array of map IDs
-    array* maps;                // an array of maps assigned to the game
+    list* maps;                 // an array of maps assigned to the game
 } 
 game;
 
@@ -107,22 +93,24 @@ game;
 
 typedef struct grid
 { 
-    type type;                  // the struct "type" which we can read with void pointer
+    type type;
     int size;                   // how big our grid will be, ex: 10x10x10
     void**** data;              // a 3D void pointer for each element that we can access with data[0][0][0]
 } 
 grid;
 
 //
-//  INT3:  3 integers (xyz) for world positions, etc
+//  LIST:  a list of void pointers that point to our structs so we can group them in various ways
 //
 
-typedef struct int3 
+typedef struct list
 { 
-    type type;                  // the struct "type" which we can read with void pointer
-    int x, y, z;                // the XYZ variables for the int3
+    type type;
+    int count;                  // how many elements are in the list
+    int size;                   // the current allocated capacity of the list
+    void* data;                 // a void pointer to the start of the list in memory
 } 
-int3;
+list;
 
 //
 //  MAP:  a "level" or "scene" for a game.  a game can have multiple maps
@@ -131,7 +119,7 @@ int3;
 
 typedef struct map
 {
-    type type;                  // the struct "type" which we can read with void pointer
+    type type; 
     int ID;                     // an ID for the map
     char* name;                 // a string to name the map with
 
@@ -139,10 +127,10 @@ typedef struct map
     int height;                 // how many chunks the map will have in the Y direction
     int scale;                  // how many nodes per chunk
 
-    array*** grid;              // a multidimensional array which holds an array of object IDs indexed by position
+    list*** grid;              // a multidimensional array which holds an array of object IDs indexed by position
     grid* objects;              // a collection of all the objects assigned to this map
 
-    array* chunks;              // an array of all the chunks assigned to the map
+    list* chunks;              // an array of all the chunks assigned to the map
 }
 map;
 
@@ -156,7 +144,7 @@ typedef struct mesh
     // a "vertex buffer object", these objects live in the GPU.  when we tell openGL to create them for our mesh
     // it will return an integer that represents the object which we will use whenever we need to update/draw the mesh
 
-    type type;                  // the struct "type" which we can read with void pointer
+    type type; 
 
     unsigned int VAO;           // an ID that openGL gives us that points to our vertex array object for this mesh
     unsigned int VBO;           // an ID that openGL gives us that points to our vertex buffer object for this mesh
@@ -165,9 +153,9 @@ typedef struct mesh
     int VBOSize;                // tells us how many bytes the VBO currently has allocated
     int EBOSize;                // tells us how many bytes the EBO currently has allocated
 
-    array* vertex;              // an array of float3 where 3 = a vertex
+    array* vertex;              // an array of floats for our vertices
+    array* uv;                  // an array of floats that represent UV values
     array* index;               // an array of int that represents the order of triangle drawing
-    array* uv;                 
 } 
 mesh;
 
@@ -178,7 +166,7 @@ mesh;
 
 typedef struct shape
 {
-    type type;                  // the struct "type" which we can read with void pointer
+    type type; 
     type ID;                    // what type of shape it is
     int material;               // what texture the shape will use
     int orientation;            // what orientation (rotation) the shape will display in
@@ -191,9 +179,9 @@ shape;
 
 typedef struct table
 {
-    type type;                  // the struct "type" which we can read with void pointer
+    type type;
     int count;                  // how many elements are in the hashtable
-    int max;                    // the max # of elements the hashtable can currently hold
+    int size;                   // the max # of elements the hashtable can currently hold
     entry* entry;               // an array of entries
 }
 table;
@@ -205,22 +193,11 @@ table;
 
 typedef struct transform
 {
-    type type;                  // the struct "type" which we can read with void pointer
-    float3* position;           // the xyz world position
-    float3* rotation;           // the xyz euler rotation of the object
-    float3* scale;              // the xyz scale of the object
+    type type; 
+    float3 position;            // the xyz world position
+    float3 rotation;            // the xyz euler rotation of the object
+    float3 scale;               // the xyz scale of the object
 }
 transform;
-
-//
-//  UID:  a 16 byte slice of data that guarantees to be unique which we will use for keys
-//
-
-typedef struct uid
-{
-    type type;                  // the struct "type" which we can read with void pointer
-    uint8_t data[16];           // 16 bytes to guarantee uniqueness
-} 
-uid;
 
 #endif

@@ -4,13 +4,24 @@
 //  NEW:  creates a new array with a specified size where size = # of bits per element
 //
 
-static array* _array_new(int count, int size)
+static array* _array_new(int byte)
 {
     array* a = malloc(sizeof(array));
-    a->count = count;
-    a->size = size;
-    a->data = malloc(count * size);
+    a->count = 0;
+    a->size = 10;
+    a->byte = byte; 
+    a->data = malloc(a->size * a->byte);
     return a;
+}
+
+//
+//  GROW:  when our array is full we will increase its size
+//
+
+static void _array_grow(array* a)
+{
+    a->size *= 2;
+    a->data = realloc(a->data, a->size * a->byte);
 }
 
 //
@@ -19,8 +30,8 @@ static array* _array_new(int count, int size)
 
 static void _array_add(array* a, int count, void* data)
 {
-    a->data = realloc(a->data, (a->count + count) * a->size);
-    memcpy(a->data + (a->count * a->size), data, count * a->size);
+    while (a->count + count > a->size) { _array_grow(a); }
+    memcpy((char*)a->data + a->count * a->byte, data, a->byte * count);
     a->count += count;
 }
 
@@ -30,7 +41,20 @@ static void _array_add(array* a, int count, void* data)
 
 static void _array_set(array* a, int index, int count, void* data)
 {
-    memcpy(a->data + (index * a->size), data, count * a->size);
+    if (index < 0 || index + count > a->count) { return; }
+
+    memcpy((char*)a->data + index * a->byte, data, a->byte * count);
+}
+
+//
+//  GET: returns pointer to element at index
+//
+
+static void* _array_get(array* a, int index)
+{
+    if (index < 0 || index >= a->count) { return NULL; }
+
+    return (char*)a->data + index * a->byte;
 }
 
 //
@@ -39,28 +63,13 @@ static void _array_set(array* a, int index, int count, void* data)
 
 static void _array_remove(array* a, int index, int count)
 {
-    memcpy(a->data + (index * a->size), a->data + ((index + count) * a->size), (a->count - count) * a->size);
+    if (index < 0 || index + count > a->count) { return; }
+
+    char* start = (char*)a->data + index * a->byte;
+    char* end   = start + count * a->byte;
+
+    memmove(start, end, (a->count - index - count) * a->byte);
     a->count -= count;
-}
-
-//
-//  RESIZE:  resizes an array to a new count
-//
-
-static void _array_resize(array* a, int count)
-{
-    a->count = count;
-    a->data = realloc(a->data, count * a->size);
-}
-
-//
-//  FREE:  frees up the array memory
-//
-
-static void _array_free(array* a)
-{
-    free(a->data);
-    free(a);
 }
 
 //
@@ -73,7 +82,6 @@ void _init_array(FN* fn)
     fn->array.new = &_array_new;
     fn->array.add = &_array_add;
     fn->array.set = &_array_set;
+    fn->array.get = &_array_get;
     fn->array.remove = &_array_remove;
-    fn->array.resize = &_array_resize;
-    fn->array.free = &_array_free;
 }

@@ -5,7 +5,7 @@ static map* _map_new(FN* fn, int ID, char* name)
     map* m = malloc(sizeof(map));
     m->ID = ID;
     m->name = name;
-    m->chunks = fn->array.new(0, sizeof(chunk));
+    m->chunks = fn->list.new(100);
     return m;
 }
 

@@ -4,12 +4,12 @@
 //  NEW:  creates a new hashtable with a predetermined # of entries
 //
 
-static table* _table_new(int max)
+static table* _table_new(int size)
 {
     table* h = malloc(sizeof(table));
     h->count = 0;
-    h->max = max;
-    h->entry = calloc(max, sizeof(entry));
+    h->size = size;
+    h->entry = calloc(size, sizeof(entry));
     return h;
 }
 
@@ -17,11 +17,11 @@ static table* _table_new(int max)
 //  HASH:  creates a hash from our uid struct
 //
 
-static uint32_t _table_hash(uid* uid)
+static uint32_t _table_hash(uid uid)
 {
     uint32_t hash = 2166136261u; 
     for (size_t i = 0; i < 16; i++) {
-        hash ^= uid->data[i];
+        hash ^= uid[i];
         hash *= 16777619;
     }
     return hash;
@@ -31,29 +31,29 @@ static uint32_t _table_hash(uid* uid)
 //  COMPARE:  checks if two uids are equal
 //
 
-static int _table_compare(uid* a, uid* b)
+static int _table_compare(uid a, uid b)
 {
-    return memcmp(a->data, b->data, 16) == 0;
+    return memcmp(a, b, 16) == 0;
 }
 
 //
 //  INSERT:  inserts a new entry into the table
 //
 
-static void _table_insert(table* table, uid* key, void* data)
+static void _table_insert(table* table, uid key, void* data)
 {
     uint32_t h = _table_hash(key);
-    size_t index = h % table->max;
+    size_t index = h % table->size;
 
-    for (size_t i = 0; i < table->max; i++) 
+    for (size_t i = 0; i < table->size; i++) 
     {
-        size_t p = (index + i) % table->max;
+        size_t p = (index + i) % table->size;
         entry* e = &table->entry[p];
 
         // if the entry state is 0 (unused) or -1 (deleted) then we can use it
         if (e->state <= 0) 
         {
-            e->key = key;    
+            memcpy(e->key, key, sizeof(uid));
             e->data = data;
             e->state = 1;
             table->count++;
@@ -75,14 +75,14 @@ static void _table_insert(table* table, uid* key, void* data)
 //  GET:  inserts a new entry into the table
 //
 
-static void* _table_get(table* table, uid* key)
+static void* _table_get(table* table, uid key)
 {
     uint32_t h = _table_hash(key);
-    size_t index = h % table->max;
+    size_t index = h % table->size;
 
-    for (size_t i = 0; i < table->max; i++) 
+    for (size_t i = 0; i < table->size; i++) 
     {
-        size_t p = (index + i) % table->max;
+        size_t p = (index + i) % table->size;
         entry* e = &table->entry[p];
 
         if (e->state == 0) return NULL;
@@ -96,14 +96,14 @@ static void* _table_get(table* table, uid* key)
 //  REMOVE:  removes an entry from the table
 //
 
-static void _table_remove(table* table, uid* key)
+static void _table_remove(table* table, uid key)
 {
     uint32_t h = _table_hash(key);
-    size_t index = h % table->max;
+    size_t index = h % table->size;
 
-    for (size_t i = 0; i < table->max; i++) 
+    for (size_t i = 0; i < table->size; i++) 
     {
-        size_t p = (index + i) % table->max;
+        size_t p = (index + i) % table->size;
         entry* e = &table->entry[p];
 
         if (e->state == 0) return; 

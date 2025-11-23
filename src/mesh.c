@@ -7,14 +7,9 @@
 static mesh* _mesh_new(FN* fn)
 {
     mesh* m = malloc(sizeof(mesh));
-    m->vertex = fn->array.new(0, sizeof(float));
-    m->index = fn->array.new(0, sizeof(int));
-    m->uv = fn->array.new(0, sizeof(float));
-
-    // when we create a new mesh set its VBO buffer size to 0
-    // it will be changed later by the owner of the mesh (chunk, player, etc)
-    m->VBOSize = 0;
-    m->EBOSize = 0;
+    m->vertex = fn->array.new(sizeof(float));
+    m->uv = fn->array.new(sizeof(float));
+    m->index = fn->array.new(sizeof(int));
 
     // create our openGL buffer objects and assign their IDs to our mesh
     glGenVertexArrays(1, &m->VAO);
@@ -54,18 +49,6 @@ static void _mesh_draw(FN* fn, mesh* m)
 }
 
 //
-//  FREE:  frees up the mesh memory
-//
-
-static void _mesh_free(FN* fn, mesh* m)
-{
-    fn->array.free(m->vertex);
-    fn->array.free(m->index);
-    fn->array.free(m->uv);
-    free(m);
-}
-
-//
 //  MESH.C:  utility functions for our mesh struct
 //
 
@@ -73,5 +56,4 @@ void _init_mesh(FN* fn)
 {
     fn->mesh.new = &_mesh_new;
     fn->mesh.draw = &_mesh_draw;
-    fn->mesh.free = &_mesh_free;
 }

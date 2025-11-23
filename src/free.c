@@ -15,32 +15,36 @@ void _free(void* data)
     switch(type)
     {
         case ARRAY:
-        break;
-        case BUTTON:
+            array* a = (array*) data;
+            free(a->data);
         break;
         case CHUNK:
         break;
         case ENTRY:
         break;
-        case FLOAT3:
-        break;
         case GAME:
         break;
         case GRID:
         break;
-        case INT3:
-        break;
+        case LIST:
+            list* l = (list*) data;
+            for (int i = 0; i < l->count; i++) {
+                void* d = (char*)l->data + i * l->size;
+                _free(d);
+            }
         case MAP:
         break;
         case MESH:
+            mesh* m = (mesh*) data;
+            _free(m->vertex);
+            _free(m->uv);
+            _free(m->index);
         break;
         case SHAPE:
         break;
         case TABLE:
         break;
         case TRANSFORM:
-        break;
-        case UID:
         break;
         default: break;
     }

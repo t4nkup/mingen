@@ -19,16 +19,6 @@ static void _utility_logint(int value) { printf("%d\n", value); }
 static void _utility_logfloat(float value) { printf("%f\n", value); }
 
 //
-//  LOGARRAY:  takes an array and prints each element to the console
-//
-
-static void _utility_logarray(array*array)
-{
-    // if (type == INT) { int* arr = (int*) array->data; for(int i = 0; i < array->count; i++) { _utility_logint(arr[i]); } }
-    // if (type == FLOAT) { float* arr = (float*) array->data; for(int i = 0; i < array->count; i++) { _utility_logfloat(arr[i]); } }
-}
-
-//
 //  READFILE:  reads a data file and returns a string of its characters
 //
 
@@ -70,6 +60,5 @@ void _init_utility(FN* fn)
     fn->log = &_utility_log;
     fn->logint = &_utility_logint;
     fn->logfloat = &_utility_logfloat;
-    fn->logarray = &_utility_logarray;
     fn->readfile = &_utility_readfile;
 }

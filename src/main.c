@@ -19,6 +19,7 @@ int main()
     _init_grid(&fn);
     _init_input(&fn);
     _init_loop(&fn);
+    _init_list(&fn);
     _init_map(&fn);
     _init_mesh(&fn);
     _init_network(&fn);
@@ -36,15 +37,11 @@ int main()
     // create a new game and a map to go with it
     game* g = fn.game.new(&fn, 0, "test");
     map* m = fn.map.new(&fn, 0, "test");
-
-    // assign the map to the game
-    fn.array.add(g->mapIDs, 1, (int[]) { m->ID });
-    fn.array.add(g->maps, 1, (map[]) { *m });
+    fn.list.add(g->maps, m);
 
     // create a new chunk for the map
     chunk* c = fn.chunk.new(&fn, 0, 0, 0);
-
-    fn.array.add(m->chunks, 1, (chunk[]){ *c });
+    fn.list.add(m->chunks, c);
 
     fn.data.game = g;
     fn.data.map = m;

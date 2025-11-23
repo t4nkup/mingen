@@ -16,6 +16,7 @@
 #include "../lib/GLFW/glfw3.h"
 
 // mingen headers
+#include "alias.h"
 #include "enum.h"
 #include "defs.h"
 #include "fn.h"
@@ -31,6 +32,7 @@ void _init_graphics(FN* fn);
 void _init_grid(FN* fn);
 void _init_input(FN* fn);
 void _init_loop(FN* fn);
+void _init_list(FN* fn);
 void _init_map(FN* fn);
 void _init_mesh(FN* fn);
 void _init_network(FN* fn);

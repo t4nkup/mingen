@@ -15,12 +15,11 @@ struct FN
 {
     struct _array 
     {
-        array* (*new) (int length, int size);
+        array* (*new) (int byte);
         void (*add) (array* array, int length, void* data);
         void (*set) (array* array, int index, int length, void* data);
+        void* (*get) (array* array, int index);
         void (*remove) (array* array, int index, int length);
-        void (*resize) (array* array, int length);
-        void (*free) (array* array);
     } 
     array;
 
@@ -74,6 +73,16 @@ struct FN
         void (*read) (FN* fn);
     } 
     input;
+
+    struct _list 
+    {
+        list* (*new) (int size);
+        void (*add) (list* list, void* data);
+        void (*set) (list* list, int index, void* data);
+        void* (*get) (list* list, int index);
+        void (*remove) (list* list, int index);
+    } 
+    list;
     
     struct _loop 
     {
@@ -99,7 +108,6 @@ struct FN
     {
         mesh* (*new) (FN* fn);
         void (*draw) (FN* fn, mesh* mesh);
-        void (*free) (FN* fn, mesh* mesh);
     } 
     mesh;
 
@@ -125,11 +133,11 @@ struct FN
     struct _table
     {
         table* (*new) (int max);
-        uint32_t (*hash) (uid* uid);
-        int (*compare) (uid* a, uid* b);
-        void (*insert) (table* table, uid* uid, void* data);
-        void* (*get) (table* table, uid* key);
-        void (*remove) (table* table, uid* key);
+        uint32_t (*hash) (uid uid);
+        int (*compare) (uid a, uid b);
+        void (*insert) (table* table, uid uid, void* data);
+        void* (*get) (table* table, uid key);
+        void (*remove) (table* table, uid key);
     }
     table;
 
@@ -137,7 +145,6 @@ struct FN
     void (*log) (char* message);
     void (*logint) (int value);
     void (*logfloat) (float value);
-    void (*logarray) (array* array);
     char* (*readfile) (char* filename);
 };
 

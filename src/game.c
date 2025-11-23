@@ -5,8 +5,7 @@ static game* _game_new(FN* fn, int ID, char* name)
     game* g = malloc(sizeof(game));
     g->ID = ID;
     g->name = name;
-    g->mapIDs = fn->array.new(0, sizeof(int));
-    g->maps = fn->array.new(0, sizeof(map));
+    g->maps = fn->list.new(10);
     return g;
 }
 

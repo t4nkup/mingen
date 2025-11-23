@@ -54,7 +54,7 @@ static void _loop_tick(FN* fn)
     if (fn->input.A.pressed) { 
         fn->log("A pressed"); 
     
-        chunk* c = GET(fn->data.map->chunks, chunk, 0);
+        chunk* c = fn->list.get(fn->data.map->chunks, 0);
         fn->chunk.build(fn, c);
     
     }
