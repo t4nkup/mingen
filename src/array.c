@@ -22,6 +22,8 @@ static array* _array_new(int size, type value)
         default:        a->byte = sizeof(void*); break;
     }
     a->data = malloc(a->size * a->byte);
+    fn.utility.memory += a->size * a->byte;
+    fn.utility.memory += sizeof(array);
     return a;
 }
 
@@ -37,7 +39,7 @@ static void _array_grow(array* a)
 }
 
 //
-//  ADD:  adds more elements to the array resizing it in the process
+//  ADD:  adds more elements to the array
 //
 
 static void _array_add(array* a, int count, void* data)

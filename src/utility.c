@@ -15,7 +15,10 @@ void _utility_delete(void* data)
     switch(t)
     {
         case ARRAY:
+            log("array deleted");
             array* a = (array*) data;
+            fn.utility.memory -= a->size * a->byte;
+            fn.utility.memory -= sizeof(array);
             free(a->data);
         break;
         case CHUNK:
@@ -63,24 +66,22 @@ static void _utility_log(void* data, const char* file, int line)
     // read the first byte of our void pointer and cast it to its enum type
     type t = *(type*)data;
 
-    // log what file and line # this log came from
-    printf("%s, %d: ", file, line);
-
     switch(t)
     {
         case ARRAY:
             array* _array = (array*) data;
             switch(_array->value)
             {
-                case BOOL:      printf("ARRAY\n- Type: BOOL\n"); break;
-                case INT:       printf("ARRAY\n- Type: INT\n"); break;
-                case FLOAT:     printf("ARRAY\n- Type: FLOAT\n"); break;
-                case STRING:    printf("ARRAY\n- Type: STRING\n"); break;
-                case UID:       printf("ARRAY\n- Type: UID\n"); break;
+                case BOOL:      printf("\033[32mArray\033[0m: %s, %d\n- Type: BOOL\n", file, line); break;
+                case INT:       printf("\033[32mArray\033[0m: %s, %d\n- Type: INT\n", file, line); break;
+                case FLOAT:     printf("\033[32mArray\033[0m: %s, %d\n- Type: FLOAT\n", file, line); break;
+                case STRING:    printf("\033[32mArray\033[0m: %s, %d\n- Type: STRING\n", file, line); break;
+                case UID:       printf("\033[32mArray\033[0m: %s, %d\n- Type: UID\n", file, line); break;
                 default: break;
             }
             printf("- Count: %d\n", _array->count);
             printf("- Size: %d\n", _array->size);
+            printf("- Memory: %d bytes\n", sizeof(array) + (_array->size * _array->byte));
             for (int i = 0; i < _array->count; i++) {
                 void* e = (char*)_array->data + i * _array->byte;
                 switch (_array->value) {
@@ -121,6 +122,49 @@ static void _utility_log(void* data, const char* file, int line)
             printf("\n");
         break;
     }
+}
+
+//
+//  LOGVAL:  prints a value to the console
+//
+
+static void _utility_logval(void* data, type type, const char* file, int line)
+{
+    if (data == NULL) { return; }
+
+    // log what file and line # this log came from
+    printf("%s, %d: ", file, line);
+
+    switch(type)
+    {
+        case INT:
+            printf("INT: %d\n", *(int*)data);
+        break;
+        case FLOAT:
+        break;
+        case INT3:
+        break;
+        case FLOAT3:
+        break;
+        case BOOL:
+        break;
+        case STRING:
+        break;
+        case UID:
+        break;
+        default: 
+        break;
+    }
+}
+
+//
+//  LOGMEM:  prints the current memory usage to the console
+//
+
+static void _utility_logmem(const char* file, int line)
+{
+    printf("\033[34mMemory\033[0m: %s, %d\n", file, line);
+    printf("\033[31m%zu\033[0m bytes\n", fn.utility.memory);
 }
 
 //
@@ -189,6 +233,8 @@ void _init_utility()
 {
     fn.utility.delete = &_utility_delete;
     fn.utility.log = &_utility_log;
+    fn.utility.logval = &_utility_logval;
+    fn.utility.logmem = &_utility_logmem;
     fn.utility.load = &_utility_load;
     fn.utility.uid = &_utility_uid;
 }

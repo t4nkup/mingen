@@ -1,5 +1,4 @@
-- test out logging and deleting the types
-    - array
+- test out logging and deleting the types (make sure memory matches up)
     - button
     - chunk
     - entry

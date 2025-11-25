@@ -139,8 +139,12 @@ struct FN
 
     struct _utility
     {
+        size_t memory;
+
         void (*delete) (void* object);
         void (*log) (void* data, const char* file, int line);
+        void (*logval) (void* data, type type, const char* file, int line);
+        void (*logmem) (const char* file, int line);
         char* (*load) (char* filename);
         void (*uid) (uid id);
     }
