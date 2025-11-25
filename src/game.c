@@ -1,9 +1,9 @@
 #include "../include/mingen.h"
 
-static game* _game_new(int ID, char* name)
+static game* _game_new(char* name)
 {
     game* g = malloc(sizeof(game));
-    g->ID = ID;
+    fn.utility.uid(g->ID);
     g->name = name;
     g->maps = fn.list.new(10);
     return g;

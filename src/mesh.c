@@ -7,9 +7,9 @@
 static mesh* _mesh_new()
 {
     mesh* m = malloc(sizeof(mesh));
-    m->vertex = fn.array.new(sizeof(float));
-    m->uv = fn.array.new(sizeof(float));
-    m->index = fn.array.new(sizeof(int));
+    m->vertex = fn.array.new(0, FLOAT);
+    m->uv = fn.array.new(0, FLOAT);
+    m->index = fn.array.new(0, INT);
 
     // create our openGL buffer objects and assign their IDs to our mesh
     glGenVertexArrays(1, &m->VAO);

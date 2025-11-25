@@ -1,7 +1,7 @@
 #include "mingen.h"
 
-#ifndef _TYPE
-#define _TYPE
+#ifndef TYPE
+#define TYPE
 
 //
 //  ARRAY:  a list of data for primitive types
@@ -69,7 +69,7 @@ entry;
 typedef struct game
 {
     type type;
-    int ID;                     // the ID of the game
+    uid ID;                     // the ID of the game
     char* name;                 // a string to name the game with
     list* maps;                 // an array of maps assigned to the game
 } 
@@ -108,7 +108,7 @@ list;
 typedef struct map
 {
     type type; 
-    int ID;                     // an ID for the map
+    uid ID;                     // an ID for the map
     char* name;                 // a string to name the map with
 
     int size;                   // how many chunks the map will have in XZ directions

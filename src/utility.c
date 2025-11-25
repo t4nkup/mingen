@@ -10,9 +10,9 @@ void _utility_delete(void* data)
     if (data == NULL) { return; }
 
     // read the first byte of our void pointer and cast it to its enum type
-    type type = *((unsigned char*)data);
+    type t = *(type*)data;
 
-    switch(type)
+    switch(t)
     {
         case ARRAY:
             array* a = (array*) data;
@@ -61,12 +61,12 @@ static void _utility_log(void* data, const char* file, int line)
     if (data == NULL) { return; }
 
     // read the first byte of our void pointer and cast it to its enum type
-    type type = *((unsigned char*)data);
+    type t = *(type*)data;
 
     // log what file and line # this log came from
-    printf("%s, %d\n", file, line);
+    printf("%s, %d: ", file, line);
 
-    switch(type)
+    switch(t)
     {
         case ARRAY:
             array* _array = (array*) data;
@@ -101,7 +101,8 @@ static void _utility_log(void* data, const char* file, int line)
 
         break;
         case GRID:
-
+            grid* _grid = (grid*) data;
+            printf("GRID\n- Size: %d", _grid->size);
         break;
         case LIST:
 
@@ -114,7 +115,11 @@ static void _utility_log(void* data, const char* file, int line)
         case TABLE:
 
         break;
-        default: break;
+        default: 
+            char* s = (char*)data;
+            for (int i = 0; s[i] != '\0'; i++) { putchar(s[i]); }
+            printf("\n");
+        break;
     }
 }
 
@@ -152,6 +157,31 @@ static char* _utility_load(char* filename)
 }
 
 //
+//  UID:  generates a random 16 byte uid
+//
+
+void _utility_uid(uid id)
+{
+    static uint32_t counter = 0;
+    counter++;
+
+    static uint32_t prng_state = 0;
+    if (prng_state == 0) { prng_state = (uint32_t)time(NULL); }
+
+    uint32_t x = prng_state;
+    x ^= x << 13;
+    x ^= x >> 17;
+    x ^= x << 5;
+    prng_state = x;
+    uint64_t t = (uint64_t)time(NULL);
+    for (int i = 0; i < 8; i++) { id[i] = (t >> (56 - i*8)) & 0xFF; }
+    for (int i = 0; i < 4; i++) { id[8 + i] = (counter >> (24 - i*8)) & 0xFF; }
+    for (int i = 0; i < 4; i++) { id[12 + i] = (x >> (24 - i*8)) & 0xFF; }
+    id[6] = (id[6] & 0x0F) | 0x40;
+    id[8] = (id[8] & 0x3F) | 0x80;
+}
+
+//
 //  UTILITY.C:  a helper module for various functions that dont fit elsewhere
 //
 
@@ -160,4 +190,5 @@ void _init_utility()
     fn.utility.delete = &_utility_delete;
     fn.utility.log = &_utility_log;
     fn.utility.load = &_utility_load;
+    fn.utility.uid = &_utility_uid;
 }

@@ -33,8 +33,8 @@ int main()
     fn.gfx.setup();
 
     // create a new game and a map to go with it
-    game* g = fn.game.new(0, "test");
-    map* m = fn.map.new(0, "test");
+    game* g = fn.game.new("test");
+    map* m = fn.map.new("test");
     fn.list.add(g->maps, m);
 
     // create a new chunk for the map
@@ -46,10 +46,10 @@ int main()
 
 
     // start our game loop
-    fn.loop.start(&fn);
+    fn.loop.start();
 
     // cleanup
-    fn.gfx.unload(&fn);
+    fn.gfx.unload();
 
     return 0;
 }

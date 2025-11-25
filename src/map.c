@@ -1,9 +1,9 @@
 #include "../include/mingen.h"
 
-static map* _map_new(int ID, char* name)
+static map* _map_new(char* name)
 {
     map* m = malloc(sizeof(map));
-    m->ID = ID;
+    fn.utility.uid(m->ID);
     m->name = name;
     m->chunks = fn.list.new(100);
     return m;

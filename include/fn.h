@@ -1,7 +1,7 @@
 #include "mingen.h"
 
-#ifndef _FN
-#define _FN
+#ifndef FUNC
+#define FUNC
 
 // 
 //  FN:  this is an extern struct that will we will treat as a global manager
@@ -11,7 +11,7 @@ struct FN
 {
     struct _array 
     {
-        array* (*new) (int byte);
+        array* (*new) (int size, type value);
         void (*add) (array* array, int length, void* data);
         void (*set) (array* array, int index, int length, void* data);
         void* (*get) (array* array, int index);
@@ -36,7 +36,7 @@ struct FN
 
     struct _game 
     {
-        game* (*new) (int ID, char* name);
+        game* (*new) (char* name);
         void (*load) ();
         void (*unload) ();
     } 
@@ -93,7 +93,7 @@ struct FN
 
     struct _map 
     {
-        map* (*new) (int ID, char* name);
+        map* (*new) (char* name);
         void (*load) ();
         void (*unload) ();
         void (*mapgen) ();
@@ -139,10 +139,10 @@ struct FN
 
     struct _utility
     {
-        void (*new) (type type);
         void (*delete) (void* object);
         void (*log) (void* data, const char* file, int line);
         char* (*load) (char* filename);
+        void (*uid) (uid id);
     }
     utility;
 };

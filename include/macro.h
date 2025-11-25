@@ -1,14 +1,14 @@
 #include "mingen.h"
 
-#ifndef _MACRO
-#define _MACRO
+#ifndef MACRO
+#define MACRO
 
-// 
-//  MACRO:  here are some macros we can set to make coding easier
-//
-
+// macros
+#define __FILENAME__ (__builtin_strrchr(__FILE__, '/') ? __builtin_strrchr(__FILE__, '/') + 1 : \
+                      (__builtin_strrchr(__FILE__, '\\') ? __builtin_strrchr(__FILE__, '\\') + 1 : __FILE__))
+                      
 #define delete(data) fn.utility.delete(data)
-#define log(data) fn.utility.log(data, __FILE__, __LINE__)
+#define log(data) fn.utility.log(data, __FILENAME__, __LINE__)
 #define load(data) fn.utility.load(data)
 
 #endif

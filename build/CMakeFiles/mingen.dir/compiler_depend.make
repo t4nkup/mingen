@@ -299,6 +299,7 @@ CMakeFiles/mingen.dir/lib/GLAD/glad.c.obj: C:/Users/Unknown/Desktop/mingen/lib/G
 
 CMakeFiles/mingen.dir/src/array.c.obj: C:/Users/Unknown/Desktop/mingen/src/array.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -316,6 +317,7 @@ CMakeFiles/mingen.dir/src/array.c.obj: C:/Users/Unknown/Desktop/mingen/src/array
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -323,20 +325,26 @@ CMakeFiles/mingen.dir/src/array.c.obj: C:/Users/Unknown/Desktop/mingen/src/array
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/chunk.c.obj: C:/Users/Unknown/Desktop/mingen/src/chunk.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -354,6 +362,7 @@ CMakeFiles/mingen.dir/src/chunk.c.obj: C:/Users/Unknown/Desktop/mingen/src/chunk
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -361,20 +370,26 @@ CMakeFiles/mingen.dir/src/chunk.c.obj: C:/Users/Unknown/Desktop/mingen/src/chunk
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/data.c.obj: C:/Users/Unknown/Desktop/mingen/src/data.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -392,6 +407,7 @@ CMakeFiles/mingen.dir/src/data.c.obj: C:/Users/Unknown/Desktop/mingen/src/data.c
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -399,20 +415,26 @@ CMakeFiles/mingen.dir/src/data.c.obj: C:/Users/Unknown/Desktop/mingen/src/data.c
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/game.c.obj: C:/Users/Unknown/Desktop/mingen/src/game.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -430,6 +452,7 @@ CMakeFiles/mingen.dir/src/game.c.obj: C:/Users/Unknown/Desktop/mingen/src/game.c
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -437,20 +460,26 @@ CMakeFiles/mingen.dir/src/game.c.obj: C:/Users/Unknown/Desktop/mingen/src/game.c
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/graphics.c.obj: C:/Users/Unknown/Desktop/mingen/src/graphics.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -468,6 +497,7 @@ CMakeFiles/mingen.dir/src/graphics.c.obj: C:/Users/Unknown/Desktop/mingen/src/gr
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -475,20 +505,26 @@ CMakeFiles/mingen.dir/src/graphics.c.obj: C:/Users/Unknown/Desktop/mingen/src/gr
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/grid.c.obj: C:/Users/Unknown/Desktop/mingen/src/grid.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -506,6 +542,7 @@ CMakeFiles/mingen.dir/src/grid.c.obj: C:/Users/Unknown/Desktop/mingen/src/grid.c
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -513,20 +550,26 @@ CMakeFiles/mingen.dir/src/grid.c.obj: C:/Users/Unknown/Desktop/mingen/src/grid.c
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/input.c.obj: C:/Users/Unknown/Desktop/mingen/src/input.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -544,6 +587,7 @@ CMakeFiles/mingen.dir/src/input.c.obj: C:/Users/Unknown/Desktop/mingen/src/input
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -551,20 +595,26 @@ CMakeFiles/mingen.dir/src/input.c.obj: C:/Users/Unknown/Desktop/mingen/src/input
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/list.c.obj: C:/Users/Unknown/Desktop/mingen/src/list.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -582,6 +632,7 @@ CMakeFiles/mingen.dir/src/list.c.obj: C:/Users/Unknown/Desktop/mingen/src/list.c
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -589,20 +640,26 @@ CMakeFiles/mingen.dir/src/list.c.obj: C:/Users/Unknown/Desktop/mingen/src/list.c
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/loop.c.obj: C:/Users/Unknown/Desktop/mingen/src/loop.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -620,6 +677,7 @@ CMakeFiles/mingen.dir/src/loop.c.obj: C:/Users/Unknown/Desktop/mingen/src/loop.c
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -627,20 +685,26 @@ CMakeFiles/mingen.dir/src/loop.c.obj: C:/Users/Unknown/Desktop/mingen/src/loop.c
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/main.c.obj: C:/Users/Unknown/Desktop/mingen/src/main.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -658,6 +722,7 @@ CMakeFiles/mingen.dir/src/main.c.obj: C:/Users/Unknown/Desktop/mingen/src/main.c
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -665,20 +730,26 @@ CMakeFiles/mingen.dir/src/main.c.obj: C:/Users/Unknown/Desktop/mingen/src/main.c
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/map.c.obj: C:/Users/Unknown/Desktop/mingen/src/map.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -696,6 +767,7 @@ CMakeFiles/mingen.dir/src/map.c.obj: C:/Users/Unknown/Desktop/mingen/src/map.c \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -703,20 +775,26 @@ CMakeFiles/mingen.dir/src/map.c.obj: C:/Users/Unknown/Desktop/mingen/src/map.c \
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/mesh.c.obj: C:/Users/Unknown/Desktop/mingen/src/mesh.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -734,6 +812,7 @@ CMakeFiles/mingen.dir/src/mesh.c.obj: C:/Users/Unknown/Desktop/mingen/src/mesh.c
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -741,20 +820,26 @@ CMakeFiles/mingen.dir/src/mesh.c.obj: C:/Users/Unknown/Desktop/mingen/src/mesh.c
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/network.c.obj: C:/Users/Unknown/Desktop/mingen/src/network.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -772,6 +857,7 @@ CMakeFiles/mingen.dir/src/network.c.obj: C:/Users/Unknown/Desktop/mingen/src/net
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -779,20 +865,26 @@ CMakeFiles/mingen.dir/src/network.c.obj: C:/Users/Unknown/Desktop/mingen/src/net
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/shape/cube.c.obj: C:/Users/Unknown/Desktop/mingen/src/shape/cube.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -810,6 +902,7 @@ CMakeFiles/mingen.dir/src/shape/cube.c.obj: C:/Users/Unknown/Desktop/mingen/src/
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -817,20 +910,26 @@ CMakeFiles/mingen.dir/src/shape/cube.c.obj: C:/Users/Unknown/Desktop/mingen/src/
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/shape/ramp.c.obj: C:/Users/Unknown/Desktop/mingen/src/shape/ramp.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -848,6 +947,7 @@ CMakeFiles/mingen.dir/src/shape/ramp.c.obj: C:/Users/Unknown/Desktop/mingen/src/
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -855,20 +955,26 @@ CMakeFiles/mingen.dir/src/shape/ramp.c.obj: C:/Users/Unknown/Desktop/mingen/src/
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/sound.c.obj: C:/Users/Unknown/Desktop/mingen/src/sound.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -886,6 +992,7 @@ CMakeFiles/mingen.dir/src/sound.c.obj: C:/Users/Unknown/Desktop/mingen/src/sound
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -893,20 +1000,26 @@ CMakeFiles/mingen.dir/src/sound.c.obj: C:/Users/Unknown/Desktop/mingen/src/sound
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/table.c.obj: C:/Users/Unknown/Desktop/mingen/src/table.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -924,6 +1037,7 @@ CMakeFiles/mingen.dir/src/table.c.obj: C:/Users/Unknown/Desktop/mingen/src/table
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -931,20 +1045,26 @@ CMakeFiles/mingen.dir/src/table.c.obj: C:/Users/Unknown/Desktop/mingen/src/table
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 CMakeFiles/mingen.dir/src/utility.c.obj: C:/Users/Unknown/Desktop/mingen/src/utility.c \
   C:/Users/Unknown/Desktop/mingen/include/def.h \
+  C:/Users/Unknown/Desktop/mingen/include/enum.h \
   C:/Users/Unknown/Desktop/mingen/include/fn.h \
   C:/Users/Unknown/Desktop/mingen/include/macro.h \
   C:/Users/Unknown/Desktop/mingen/include/mingen.h \
@@ -962,6 +1082,7 @@ CMakeFiles/mingen.dir/src/utility.c.obj: C:/Users/Unknown/Desktop/mingen/src/uti
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_mac.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_off_t.h \
   C:/mingw64/x86_64-w64-mingw32/include/_mingw_secapi.h \
+  C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_stdio_config.h \
   C:/mingw64/x86_64-w64-mingw32/include/corecrt_wstdlib.h \
@@ -969,16 +1090,21 @@ CMakeFiles/mingen.dir/src/utility.c.obj: C:/Users/Unknown/Desktop/mingen/src/uti
   C:/mingw64/x86_64-w64-mingw32/include/errno.h \
   C:/mingw64/x86_64-w64-mingw32/include/limits.h \
   C:/mingw64/x86_64-w64-mingw32/include/malloc.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
+  C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
   C:/mingw64/x86_64-w64-mingw32/include/sdks/_mingw_ddk.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdlib_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+  C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
   C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdint.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdio.h \
   C:/mingw64/x86_64-w64-mingw32/include/stdlib.h \
   C:/mingw64/x86_64-w64-mingw32/include/string.h \
   C:/mingw64/x86_64-w64-mingw32/include/swprintf.inl \
+  C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+  C:/mingw64/x86_64-w64-mingw32/include/time.h \
   C:/mingw64/x86_64-w64-mingw32/include/vadefs.h
 
 
@@ -1532,6 +1658,8 @@ C:/mingw64/x86_64-w64-mingw32/include/securitybaseapi.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/servprov.h:
 
+C:/Users/Unknown/Desktop/mingen/include/enum.h:
+
 C:/mingw64/x86_64-w64-mingw32/include/shellapi.h:
 
 C:/mingw64/x86_64-w64-mingw32/include/stddef.h:
@@ -1602,6 +1730,18 @@ C:/Users/Unknown/Desktop/mingen/lib/GLFW/glfw3.h:
 
 C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdbool.h:
 
+C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h:
+
+C:/Users/Unknown/Desktop/mingen/src/mesh.c:
+
+C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h:
+
+C:/mingw64/x86_64-w64-mingw32/include/time.h:
+
 C:/Users/Unknown/Desktop/mingen/src/data.c:
 
 C:/Users/Unknown/Desktop/mingen/src/input.c:
@@ -1611,8 +1751,6 @@ C:/Users/Unknown/Desktop/mingen/src/list.c:
 C:/Users/Unknown/Desktop/mingen/src/loop.c:
 
 C:/Users/Unknown/Desktop/mingen/src/map.c:
-
-C:/Users/Unknown/Desktop/mingen/src/mesh.c:
 
 C:/Users/Unknown/Desktop/mingen/src/network.c:
 

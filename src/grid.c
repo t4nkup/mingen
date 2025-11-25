@@ -9,6 +9,7 @@
 static grid* _grid_new(int size)
 {
     grid* g = malloc(sizeof(grid));
+    g->type = GRID;
     g->size = size;
     g->data = malloc(size * sizeof(void***));
     for (int x = 0; x < size; x++) {

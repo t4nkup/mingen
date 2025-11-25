@@ -25,6 +25,12 @@ CMakeFiles/mingen.dir/src/utility.c.obj: \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/stdio_s.h \
  C:/mingw64/x86_64-w64-mingw32/include/string.h \
  C:/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h \
+ C:/mingw64/x86_64-w64-mingw32/include/time.h \
+ C:/mingw64/x86_64-w64-mingw32/include/sys/timeb.h \
+ C:/mingw64/x86_64-w64-mingw32/include/sec_api/sys/timeb_s.h \
+ C:/mingw64/x86_64-w64-mingw32/include/_timeval.h \
+ C:/mingw64/x86_64-w64-mingw32/include/pthread_time.h \
+ C:/mingw64/x86_64-w64-mingw32/include/pthread_compat.h \
  C:/Users/Unknown/Desktop/mingen/lib/GLAD/glad.h \
  C:/Users/Unknown/Desktop/mingen/lib/GLAD/khrplatform.h \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stdint.h \
@@ -32,8 +38,9 @@ CMakeFiles/mingen.dir/src/utility.c.obj: \
  C:/mingw64/lib/gcc/x86_64-w64-mingw32/15.2.0/include/stddef.h \
  C:/mingw64/x86_64-w64-mingw32/include/stddef.h \
  C:/Users/Unknown/Desktop/mingen/lib/GLFW/glfw3.h \
- C:/Users/Unknown/Desktop/mingen/include/def.h \
+ C:/Users/Unknown/Desktop/mingen/include/enum.h \
  C:/Users/Unknown/Desktop/mingen/include/mingen.h \
+ C:/Users/Unknown/Desktop/mingen/include/def.h \
  C:/Users/Unknown/Desktop/mingen/include/type.h \
  C:/Users/Unknown/Desktop/mingen/include/fn.h \
  C:/Users/Unknown/Desktop/mingen/include/macro.h

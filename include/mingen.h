@@ -10,19 +10,21 @@
 #include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
+#include <time.h>
 
 // included libraries
 #include "../lib/GLAD/glad.h"
 #include "../lib/GLFW/glfw3.h"
 
 // mingen headers
+#include "enum.h"
 #include "def.h"
 #include "type.h"
 #include "fn.h"
-extern FN fn;
 #include "macro.h"
 
-// module init funcs
+// field declarations
+extern FN fn;
 void _init_array();
 void _init_chunk();
 void _init_data();

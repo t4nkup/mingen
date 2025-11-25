@@ -52,11 +52,16 @@ static void _loop_tick()
 
     // process logic
     if (fn.input.A.pressed) { 
-        log("A pressed"); 
+
+        grid* g = fn.grid.new(2);
+        log(g);
+
+        // log("A pressed"); 
     
-        chunk* c = fn.list.get(fn.data.map->chunks, 0);
-        fn.chunk.build(c);
+        // chunk* c = fn.list.get(fn.data.map->chunks, 0);
+        // fn.chunk.build(c);
     
+        // log(c->mesh->vertex);
     }
     if (fn.input.A.down && fn.input.A.timer > 0.2) { log("A was held"); }
 

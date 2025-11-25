@@ -1,6 +1,16 @@
-- build "free.c"
-
-- test out the new array, grid, and hashtable modules
+- test out logging and deleting the types
+    - array
+    - button
+    - chunk
+    - entry
+    - game
+    - grid 
+    - list 
+    - map 
+    - mesh 
+    - shape 
+    - table 
+    - transform
 
 - draw a cube from "CUBE" shape
     - build a "stream" module where we can build an array dynamically

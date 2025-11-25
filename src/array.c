@@ -4,12 +4,23 @@
 //  NEW:  creates a new array with a specified size where size = # of bits per element
 //
 
-static array* _array_new(int byte)
+static array* _array_new(int size, type value)
 {
     array* a = malloc(sizeof(array));
+    a->type = ARRAY;
     a->count = 0;
-    a->size = 10;
-    a->byte = byte; 
+    a->size = size;
+    if (a->size == 0) { a->size = 1; }
+    a->value = value;
+    switch(value)
+    {
+        case BOOL:      a->byte = sizeof(bool); break;
+        case INT:       a->byte = sizeof(int); break;
+        case FLOAT:     a->byte = sizeof(float); break;
+        case STRING:    a->byte = sizeof(char*); break;
+        case UID:       a->byte = sizeof(uid); break;
+        default:        a->byte = sizeof(void*); break;
+    }
     a->data = malloc(a->size * a->byte);
     return a;
 }
@@ -20,6 +31,7 @@ static array* _array_new(int byte)
 
 static void _array_grow(array* a)
 {
+    if (a->size < 50) { a->size = 50; }
     a->size *= 2;
     a->data = realloc(a->data, a->size * a->byte);
 }
