@@ -72,11 +72,11 @@ static void _list_remove(list* a, int index)
 //            we can have an list of primitives and also custom types
 //
 
-void _init_list(FN* fn)
+void _init_list()
 {
-    fn->list.new = &_list_new;
-    fn->list.add = &_list_add;
-    fn->list.set = &_list_set;
-    fn->list.get = &_list_get;
-    fn->list.remove = &_list_remove;
+    fn.list.new = &_list_new;
+    fn.list.add = &_list_add;
+    fn.list.set = &_list_set;
+    fn.list.get = &_list_get;
+    fn.list.remove = &_list_remove;
 }

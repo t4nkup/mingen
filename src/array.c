@@ -77,11 +77,11 @@ static void _array_remove(array* a, int index, int count)
 //            we can have an array of primitives and also custom types
 //
 
-void _init_array(FN* fn)
+void _init_array()
 {
-    fn->array.new = &_array_new;
-    fn->array.add = &_array_add;
-    fn->array.set = &_array_set;
-    fn->array.get = &_array_get;
-    fn->array.remove = &_array_remove;
+    fn.array.new = &_array_new;
+    fn.array.add = &_array_add;
+    fn.array.set = &_array_set;
+    fn.array.get = &_array_get;
+    fn.array.remove = &_array_remove;
 }

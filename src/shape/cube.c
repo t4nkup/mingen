@@ -17,7 +17,7 @@ static void* _shape_cube_new(int material, int orientation)
 //  BUILD:  builds the shape geometry.. vertices, indices, uvs, etc
 //
 
-static void _shape_cube_build(FN* fn)
+static void _shape_cube_build()
 {
 
 }
@@ -26,8 +26,8 @@ static void _shape_cube_build(FN* fn)
 //  CUBE.C:  a "cube" shape is a regular cube
 //
 
-void _init_shape_cube(FN* fn)
+void _init_shape_cube()
 {
-    fn->shape.cube.new = &_shape_cube_new;
-    fn->shape.cube.build = &_shape_cube_build;
+    fn.shape.cube.new = &_shape_cube_new;
+    fn.shape.cube.build = &_shape_cube_build;
 }

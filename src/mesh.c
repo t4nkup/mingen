@@ -4,12 +4,12 @@
 //  NEW:  creates a new mesh in memory and creates a VAO for it
 //
 
-static mesh* _mesh_new(FN* fn)
+static mesh* _mesh_new()
 {
     mesh* m = malloc(sizeof(mesh));
-    m->vertex = fn->array.new(sizeof(float));
-    m->uv = fn->array.new(sizeof(float));
-    m->index = fn->array.new(sizeof(int));
+    m->vertex = fn.array.new(sizeof(float));
+    m->uv = fn.array.new(sizeof(float));
+    m->index = fn.array.new(sizeof(int));
 
     // create our openGL buffer objects and assign their IDs to our mesh
     glGenVertexArrays(1, &m->VAO);
@@ -42,7 +42,7 @@ static mesh* _mesh_new(FN* fn)
 //  DRAW:  draws the mesh using openGL
 //
 
-static void _mesh_draw(FN* fn, mesh* m)
+static void _mesh_draw(mesh* m)
 {
     glBindVertexArray(m->VAO);
     glDrawElements(GL_TRIANGLES, m->index->count, GL_UNSIGNED_INT, 0);
@@ -52,8 +52,8 @@ static void _mesh_draw(FN* fn, mesh* m)
 //  MESH.C:  utility functions for our mesh struct
 //
 
-void _init_mesh(FN* fn)
+void _init_mesh()
 {
-    fn->mesh.new = &_mesh_new;
-    fn->mesh.draw = &_mesh_draw;
+    fn.mesh.new = &_mesh_new;
+    fn.mesh.draw = &_mesh_draw;
 }

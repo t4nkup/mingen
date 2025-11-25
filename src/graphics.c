@@ -23,11 +23,11 @@ static void _graphics_framebuffer_resize(GLFWwindow* window, int width, int heig
 //  COMPILE_SHADERS:  reads our shaders in /src/shader/ and compiles them for use in openGL
 //
 
-static void _graphics_compile_shaders(FN* fn)
+static void _graphics_compile_shaders()
 {
     // get our shader data from file
-    char* fdata = fn->readfile("src/shader/fragment.shader");
-    char* vdata = fn->readfile("src/shader/vertex.shader");
+    char* fdata = load("src/shader/fragment.shader");
+    char* vdata = load("src/shader/vertex.shader");
 
     // have openGL compile the shaders
     unsigned int fshader, vshader;
@@ -48,7 +48,7 @@ static void _graphics_compile_shaders(FN* fn)
     glDeleteShader(vshader); free (vdata);
 
     // store our shader program for future use
-    fn->gfx.shader = sprogram;
+    fn.gfx.shader = sprogram;
 }
 
 //
@@ -56,7 +56,7 @@ static void _graphics_compile_shaders(FN* fn)
 //          the openGL callbacks, load GLAD, and compile our shaders
 //
 
-static void _graphics_setup(FN* fn)
+static void _graphics_setup()
 {
     // setup GLFW
     if (!glfwInit()) { }
@@ -65,13 +65,13 @@ static void _graphics_setup(FN* fn)
     glfwSetErrorCallback(_graphics_error);
 
     // create the GLFW window
-    fn->gfx.window = glfwCreateWindow(640, 480, "My Title", NULL, NULL);
+    fn.gfx.window = glfwCreateWindow(640, 480, "My Title", NULL, NULL);
 
     // make it the current context
-    glfwMakeContextCurrent(fn->gfx.window);
+    glfwMakeContextCurrent(fn.gfx.window);
 
     // set our window resize callback
-    glfwSetFramebufferSizeCallback(fn->gfx.window, _graphics_framebuffer_resize);
+    glfwSetFramebufferSizeCallback(fn.gfx.window, _graphics_framebuffer_resize);
 
     // setup the openGL functions with GLAD
     gladLoadGLLoader((GLADloadproc) glfwGetProcAddress);
@@ -88,20 +88,20 @@ static void _graphics_setup(FN* fn)
 //           to the window with openGL
 //
 
-static void _graphics_render(FN* fn)
+static void _graphics_render()
 {
     // and here we render
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
     // to draw an object we have to set the correct shader
-    glUseProgram(fn->gfx.shader);
+    glUseProgram(fn.gfx.shader);
 
     // loop over our current maps chunks and draw their meshs
-    for(int i = 0; i < fn->data.map->chunks->count; i++)
+    for(int i = 0; i < fn.data.map->chunks->count; i++)
     {
-        chunk* c = fn->list.get(fn->data.map->chunks, 0);
-        fn->chunk.draw(fn, c);
+        chunk* c = fn.list.get(fn.data.map->chunks, 0);
+        fn.chunk.draw(c);
     }
 }
 
@@ -109,9 +109,9 @@ static void _graphics_render(FN* fn)
 //  UNLOAD:  we call this before we close the window
 //
 
-static void _graphics_unload(FN* fn)
+static void _graphics_unload()
 {
-    glfwDestroyWindow(fn->gfx.window);
+    glfwDestroyWindow(fn.gfx.window);
     glfwTerminate();
 }
 
@@ -119,9 +119,9 @@ static void _graphics_unload(FN* fn)
 //  GRAPHICS.C:  handles all of our GLFW functions and openGL rendering
 //
 
-void _init_graphics(FN* fn)
+void _init_graphics()
 {
-    fn->gfx.setup = &_graphics_setup;
-    fn->gfx.render = &_graphics_render;
-    fn->gfx.unload = &_graphics_unload;
+    fn.gfx.setup = &_graphics_setup;
+    fn.gfx.render = &_graphics_render;
+    fn.gfx.unload = &_graphics_unload;
 }

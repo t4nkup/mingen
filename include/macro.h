@@ -7,6 +7,8 @@
 //  MACRO:  here are some macros we can set to make coding easier
 //
 
-//#define GET(array, type, index) ((type*)(array)->data + (index))
+#define delete(data) fn.utility.delete(data)
+#define log(data) fn.utility.log(data, __FILE__, __LINE__)
+#define load(data) fn.utility.load(data)
 
 #endif

@@ -1,28 +1,128 @@
 #include "../include/mingen.h"
 
 //
-//  LOG:  takes a string and prints it to console
+//  DELETE:  takes a void pointer to one of our objects and frees
+//           its memory based off its type
 //
 
-static void _utility_log(char* message) { printf("%s\n", message); }
+void _utility_delete(void* data)
+{
+    if (data == NULL) { return; }
+
+    // read the first byte of our void pointer and cast it to its enum type
+    type type = *((unsigned char*)data);
+
+    switch(type)
+    {
+        case ARRAY:
+            array* a = (array*) data;
+            free(a->data);
+        break;
+        case CHUNK:
+        break;
+        case ENTRY:
+        break;
+        case GAME:
+        break;
+        case GRID:
+        break;
+        case LIST:
+            list* l = (list*) data;
+            for (int i = 0; i < l->count; i++) {
+                void* d = (char*)l->data + i * l->size;
+                _utility_delete(d);
+            }
+        case MAP:
+        break;
+        case MESH:
+            mesh* m = (mesh*) data;
+            _utility_delete(m->vertex);
+            _utility_delete(m->uv);
+            _utility_delete(m->index);
+        break;
+        case SHAPE:
+        break;
+        case TABLE:
+        break;
+        case TRANSFORM:
+        break;
+        default: break;
+    }
+
+    free(data);
+}
 
 //
-//  LOGINT:  takes an int and prints it to console
+//  LOG:  prints our data for a type to console for debugging
 //
 
-static void _utility_logint(int value) { printf("%d\n", value); }
+static void _utility_log(void* data, const char* file, int line)
+{
+    if (data == NULL) { return; }
+
+    // read the first byte of our void pointer and cast it to its enum type
+    type type = *((unsigned char*)data);
+
+    // log what file and line # this log came from
+    printf("%s, %d\n", file, line);
+
+    switch(type)
+    {
+        case ARRAY:
+            array* _array = (array*) data;
+            switch(_array->value)
+            {
+                case BOOL:      printf("ARRAY\n- Type: BOOL\n"); break;
+                case INT:       printf("ARRAY\n- Type: INT\n"); break;
+                case FLOAT:     printf("ARRAY\n- Type: FLOAT\n"); break;
+                case STRING:    printf("ARRAY\n- Type: STRING\n"); break;
+                case UID:       printf("ARRAY\n- Type: UID\n"); break;
+                default: break;
+            }
+            printf("- Count: %d\n", _array->count);
+            printf("- Size: %d\n", _array->size);
+            for (int i = 0; i < _array->count; i++) {
+                void* e = (char*)_array->data + i * _array->byte;
+                switch (_array->value) {
+                    case BOOL: printf("[%d] %s\n", i, (*(bool*)e ? "true" : "false")); break;
+                    case INT:  printf("[%d] %d\n", i, *(int*)e); break;
+                    case FLOAT: printf("[%d] %f\n", i, *(float*)e); break;
+                    case STRING: printf("[%d] %s\n", i, *(char**)e); break;
+                    case UID:   uint8_t* id = (uint8_t*)e; printf("[%d] ", i);
+                                for (int j = 0; j < 16; j++) { printf("%02x", id[j]); }
+                                printf("\n"); break;
+                    default: break;
+                }
+            }
+        break;
+        case CHUNK:
+        break;
+        case GAME:
+
+        break;
+        case GRID:
+
+        break;
+        case LIST:
+
+        break;
+        case MAP:
+        break;
+        case MESH:
+
+        break;
+        case TABLE:
+
+        break;
+        default: break;
+    }
+}
 
 //
-//  LOGFLOAT:  takes a float and prints it to console
+//  LOAD:  reads a data file and returns a string of its characters
 //
 
-static void _utility_logfloat(float value) { printf("%f\n", value); }
-
-//
-//  READFILE:  reads a data file and returns a string of its characters
-//
-
-static char* _utility_readfile(char* filename)
+static char* _utility_load(char* filename)
 {
     // open the file
     FILE* file = fopen(filename, "rb");
@@ -55,10 +155,9 @@ static char* _utility_readfile(char* filename)
 //  UTILITY.C:  a helper module for various functions that dont fit elsewhere
 //
 
-void _init_utility(FN* fn)
+void _init_utility()
 {
-    fn->log = &_utility_log;
-    fn->logint = &_utility_logint;
-    fn->logfloat = &_utility_logfloat;
-    fn->readfile = &_utility_readfile;
+    fn.utility.delete = &_utility_delete;
+    fn.utility.log = &_utility_log;
+    fn.utility.load = &_utility_load;
 }

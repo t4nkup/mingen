@@ -4,12 +4,8 @@
 #define _FN
 
 // 
-//  FN:  this is our manager class that will hold references to all of
-//       our modules.  the modules will mostly just hold function pointers
-//       so we can easily call stuff throughout the program
+//  FN:  this is an extern struct that will we will treat as a global manager
 //
-
-typedef struct FN FN;
 
 struct FN 
 {
@@ -25,9 +21,9 @@ struct FN
 
     struct _chunk 
     {
-        chunk* (*new) (FN* fn, int x, int y, int z);
-        void (*draw) (FN* fn, chunk* chunk);
-        void (*build) (FN* fn, chunk* chunk);
+        chunk* (*new) (int x, int y, int z);
+        void (*draw) (chunk* chunk);
+        void (*build) (chunk* chunk);
     } 
     chunk;
 
@@ -40,9 +36,9 @@ struct FN
 
     struct _game 
     {
-        game* (*new) (FN* fn, int ID, char* name);
-        void (*load) (FN* fn);
-        void (*unload) (FN* fn);
+        game* (*new) (int ID, char* name);
+        void (*load) ();
+        void (*unload) ();
     } 
     game;
 
@@ -51,18 +47,18 @@ struct FN
         GLFWwindow* window;
         unsigned int shader;
 
-        void (*setup) (FN* fn);
-        void (*render) (FN* fn);
-        void (*unload) (FN* fn);
+        void (*setup) ();
+        void (*render) ();
+        void (*unload) ();
     } 
     gfx;
 
     struct _grid 
     {
         grid* (*new) (int size);
-        void (*set) (FN* fn, grid* grid, int x, int y, int z, void* data);
+        void (*set) (grid* grid, int x, int y, int z, void* data);
         void* (*get) (grid* grid, int x, int y, int z);
-        void (*remove) (FN* fn, grid* grid, int x, int y, int z);
+        void (*remove) (grid* grid, int x, int y, int z);
     } 
     grid;
 
@@ -70,7 +66,7 @@ struct FN
     {
         button A;
 
-        void (*read) (FN* fn);
+        void (*read) ();
     } 
     input;
 
@@ -89,25 +85,25 @@ struct FN
         int isPaused;
         double current, previous, delta;
 
-        void (*start) (FN* fn);
-        void (*stop) (FN* fn);
-        void (*tick) (FN* fn);
+        void (*start) ();
+        void (*stop) ();
+        void (*tick) ();
     } 
     loop;
 
     struct _map 
     {
-        map* (*new) (FN* fn, int ID, char* name);
-        void (*load) (FN* fn);
-        void (*unload) (FN* fn);
-        void (*mapgen) (FN* fn);
+        map* (*new) (int ID, char* name);
+        void (*load) ();
+        void (*unload) ();
+        void (*mapgen) ();
     } 
     map;
 
     struct _mesh 
     {
-        mesh* (*new) (FN* fn);
-        void (*draw) (FN* fn, mesh* mesh);
+        mesh* (*new) ();
+        void (*draw) (mesh* mesh);
     } 
     mesh;
 
@@ -115,12 +111,12 @@ struct FN
     {
 
     } 
-    network;
+    net;
 
     struct _shape
     {
-        struct cube { void* (*new) (int material, int orientation); void (*build) (FN* fn); } cube;
-        struct ramp { void (*build) (FN* fn); } ramp;
+        struct cube { void* (*new) (int material, int orientation); void (*build) (); } cube;
+        struct ramp { void (*build) (); } ramp;
     } 
     shape;
 
@@ -141,11 +137,14 @@ struct FN
     }
     table;
 
-    void (*free) (void* object);
-    void (*log) (char* message);
-    void (*logint) (int value);
-    void (*logfloat) (float value);
-    char* (*readfile) (char* filename);
+    struct _utility
+    {
+        void (*new) (type type);
+        void (*delete) (void* object);
+        void (*log) (void* data, const char* file, int line);
+        char* (*load) (char* filename);
+    }
+    utility;
 };
 
 #endif

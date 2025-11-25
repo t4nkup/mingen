@@ -24,9 +24,9 @@ static grid* _grid_new(int size)
 //  SET:  assigns a new piece of data at index
 //
 
-static void _grid_set(FN* fn, grid* g, int x, int y, int z, void* data)
+static void _grid_set(grid* g, int x, int y, int z, void* data)
 {
-    fn->free(g->data[x][y][z]);
+    delete(g->data[x][y][z]);
     g->data[x][y][z] = data;
 }
 
@@ -43,9 +43,9 @@ static void* _grid_get(grid* g, int x, int y, int z)
 //  REMOVE:  removes an element in the grid at index
 //
 
-static void _grid_remove(FN* fn, grid* g, int x, int y, int z)
+static void _grid_remove(grid* g, int x, int y, int z)
 {
-    fn->free(g->data[x][y][z]);
+    delete(g->data[x][y][z]);
     g->data[x][y][z] = NULL;
 }
 
@@ -55,10 +55,10 @@ static void _grid_remove(FN* fn, grid* g, int x, int y, int z)
 //              types such as component
 //
 
-void _init_grid(FN* fn)
+void _init_grid()
 {
-    fn->grid.new = &_grid_new;
-    fn->grid.set = &_grid_set;
-    fn->grid.get = &_grid_get;
-    fn->grid.remove = &_grid_remove;
+    fn.grid.new = &_grid_new;
+    fn.grid.set = &_grid_set;
+    fn.grid.get = &_grid_get;
+    fn.grid.remove = &_grid_remove;
 }

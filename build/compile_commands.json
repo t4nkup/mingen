@@ -1,0 +1,116 @@
+[
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\array.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\array.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/array.c",
+  "output": "CMakeFiles/mingen.dir/src/array.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\chunk.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\chunk.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/chunk.c",
+  "output": "CMakeFiles/mingen.dir/src/chunk.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\data.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\data.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/data.c",
+  "output": "CMakeFiles/mingen.dir/src/data.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\game.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\game.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/game.c",
+  "output": "CMakeFiles/mingen.dir/src/game.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\graphics.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\graphics.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/graphics.c",
+  "output": "CMakeFiles/mingen.dir/src/graphics.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\grid.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\grid.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/grid.c",
+  "output": "CMakeFiles/mingen.dir/src/grid.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\input.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\input.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/input.c",
+  "output": "CMakeFiles/mingen.dir/src/input.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\list.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\list.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/list.c",
+  "output": "CMakeFiles/mingen.dir/src/list.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\loop.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\loop.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/loop.c",
+  "output": "CMakeFiles/mingen.dir/src/loop.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\main.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\main.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/main.c",
+  "output": "CMakeFiles/mingen.dir/src/main.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\map.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\map.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/map.c",
+  "output": "CMakeFiles/mingen.dir/src/map.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\mesh.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\mesh.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/mesh.c",
+  "output": "CMakeFiles/mingen.dir/src/mesh.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\network.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\network.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/network.c",
+  "output": "CMakeFiles/mingen.dir/src/network.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\shape\\cube.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\shape\\cube.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/shape/cube.c",
+  "output": "CMakeFiles/mingen.dir/src/shape/cube.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\shape\\ramp.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\shape\\ramp.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/shape/ramp.c",
+  "output": "CMakeFiles/mingen.dir/src/shape/ramp.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\sound.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\sound.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/sound.c",
+  "output": "CMakeFiles/mingen.dir/src/sound.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\table.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\table.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/table.c",
+  "output": "CMakeFiles/mingen.dir/src/table.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\src\\utility.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\src\\utility.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/src/utility.c",
+  "output": "CMakeFiles/mingen.dir/src/utility.c.obj"
+},
+{
+  "directory": "C:/Users/Unknown/Desktop/mingen/build",
+  "command": "C:\\mingw64\\bin\\gcc.exe  @CMakeFiles/mingen.dir/includes_C.rsp -g -std=c11 -Wall -O2 -o CMakeFiles\\mingen.dir\\lib\\GLAD\\glad.c.obj -c C:\\Users\\Unknown\\Desktop\\mingen\\lib\\GLAD\\glad.c",
+  "file": "C:/Users/Unknown/Desktop/mingen/lib/GLAD/glad.c",
+  "output": "CMakeFiles/mingen.dir/lib/GLAD/glad.c.obj"
+}
+]

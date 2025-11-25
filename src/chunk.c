@@ -4,7 +4,7 @@
 //  NEW:  creates a new chunk in memory
 //
 
-static chunk* _chunk_new(FN* fn, int x, int y, int z)
+static chunk* _chunk_new(int x, int y, int z)
 {
     chunk* c = malloc(sizeof(chunk));
     c->busy = 0;
@@ -12,7 +12,7 @@ static chunk* _chunk_new(FN* fn, int x, int y, int z)
     c->x = x;
     c->y = y;
     c->z = z;
-    c->mesh = fn->mesh.new(fn);
+    c->mesh = fn.mesh.new(fn);
     //c->shapes = fn->grid.new(10);
     //c->shapes->data[0][0][0] = fn->shape.cube.new(0, 0);
     return c;
@@ -22,18 +22,18 @@ static chunk* _chunk_new(FN* fn, int x, int y, int z)
 //  BUILD:  builds a chunk mesh from its block data
 //
 
-static void _chunk_build(FN* fn, chunk* chunk)
+static void _chunk_build(chunk* chunk)
 {
     mesh* m = chunk->mesh;
 
-    fn->array.add(m->vertex, 12, (float[]){
+    fn.array.add(m->vertex, 12, (float[]){
         -0.5f, -1.5f, 0.0f, 
         -0.5f,  0.5f, 0.0f, 
          0.5f,  0.5f, 0.0f, 
          0.5f, -0.5f, 0.0f 
     });
 
-    fn->array.add(m->index, 6, (int[]){
+    fn.array.add(m->index, 6, (int[]){
         0, 1, 2,
         0, 2, 3
     });
@@ -81,9 +81,9 @@ static void _chunk_build(FN* fn, chunk* chunk)
 //  DRAW:  draws the chunk onto the frame
 //
 
-static void _chunk_draw(FN* fn, chunk* c)
+static void _chunk_draw(chunk* c)
 {
-    fn->mesh.draw(fn, c->mesh);
+    fn.mesh.draw(c->mesh);
 }
 
 //
@@ -91,9 +91,9 @@ static void _chunk_draw(FN* fn, chunk* c)
 //              it is the "level geometry" or terrain of a world
 //
 
-void _init_chunk(FN* fn)
+void _init_chunk()
 {
-    fn->chunk.new = &_chunk_new;
-    fn->chunk.draw = &_chunk_draw;
-    fn->chunk.build = &_chunk_build;
+    fn.chunk.new = &_chunk_new;
+    fn.chunk.draw = &_chunk_draw;
+    fn.chunk.build = &_chunk_build;
 }

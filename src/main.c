@@ -4,43 +4,41 @@
 //  MAIN.C: starting point of our program
 //
 
+FN fn;
+
 int main()
 {
-    // declare our "manager" struct
-    FN fn; 
-
     // initialize our modules
-    _init_array(&fn);
-    _init_chunk(&fn);
-    _init_data(&fn);
-    _init_free(&fn);
-    _init_game(&fn);
-    _init_graphics(&fn);
-    _init_grid(&fn);
-    _init_input(&fn);
-    _init_loop(&fn);
-    _init_list(&fn);
-    _init_map(&fn);
-    _init_mesh(&fn);
-    _init_network(&fn);
-    _init_sound(&fn);
-    _init_table(&fn);
-    _init_utility(&fn);
+    _init_array();
+    _init_chunk();
+    _init_data();
+    _init_game();
+    _init_graphics();
+    _init_grid();
+    _init_input();
+    _init_loop();
+    _init_list();
+    _init_map();
+    _init_mesh();
+    _init_network();
+    _init_sound();
+    _init_table();
+    _init_utility();
 
     // initialize our shapes
-    _init_shape_cube(&fn);
-    _init_shape_ramp(&fn);
+    _init_shape_cube();
+    _init_shape_ramp();
 
     // initialize our graphics
-    fn.gfx.setup(&fn);
+    fn.gfx.setup();
 
     // create a new game and a map to go with it
-    game* g = fn.game.new(&fn, 0, "test");
-    map* m = fn.map.new(&fn, 0, "test");
+    game* g = fn.game.new(0, "test");
+    map* m = fn.map.new(0, "test");
     fn.list.add(g->maps, m);
 
     // create a new chunk for the map
-    chunk* c = fn.chunk.new(&fn, 0, 0, 0);
+    chunk* c = fn.chunk.new(0, 0, 0);
     fn.list.add(m->chunks, c);
 
     fn.data.game = g;

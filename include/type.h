@@ -1,20 +1,7 @@
 #include "mingen.h"
 
-#ifndef _DEFS
-#define _DEFS
-
-typedef struct array array;
-typedef struct button button;
-typedef struct chunk chunk;
-typedef struct entry entry;
-typedef struct game game;
-typedef struct grid grid;
-typedef struct list list;
-typedef struct map map;
-typedef struct mesh mesh;
-typedef struct shape shape;
-typedef struct table table;
-typedef struct transform transform;
+#ifndef _TYPE
+#define _TYPE
 
 //
 //  ARRAY:  a list of data for primitive types
@@ -23,11 +10,12 @@ typedef struct transform transform;
 typedef struct array
 { 
     type type; 
+    type value;                 // if the array holds value types (int, float, etc) 
     int count;                  // how many elements are in the array
     int size;                   // the current allocated size of the array
     int byte;                   // how many bytes each element uses
     void* data;                 // a void pointer to the start of the array in memory
-} 
+}
 array;
 
 //

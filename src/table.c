@@ -120,12 +120,12 @@ static void _table_remove(table* table, uid key)
 //  TABLE.C:  a hashtable.  lets us store objects by uid to easily retrieve and edit their data
 //
 
-void _init_table(FN* fn)
+void _init_table()
 {
-    fn->table.new = &_table_new;
-    fn->table.hash = &_table_hash;
-    fn->table.compare = &_table_compare;
-    fn->table.insert = &_table_insert;
-    fn->table.get = &_table_get;
-    fn->table.remove = &_table_remove;
+    fn.table.new = &_table_new;
+    fn.table.hash = &_table_hash;
+    fn.table.compare = &_table_compare;
+    fn.table.insert = &_table_insert;
+    fn.table.get = &_table_get;
+    fn.table.remove = &_table_remove;
 }
