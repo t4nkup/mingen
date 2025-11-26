@@ -39,10 +39,13 @@ void _utility_delete(void* data)
                         _utility_delete(g->data[i][j][k]);
                     }
                     _utility_delete(g->data[i][j]);
+                    fn.utility.memory -= g->size * sizeof(void*);
                 }
                 _utility_delete(g->data[i]);
+                fn.utility.memory -= g->size * sizeof(void*);
             }
             _utility_delete(g->data);
+            fn.utility.memory -= g->size * sizeof(void*);
         break;
         case LIST:
             list* l = (list*) data;
@@ -54,9 +57,6 @@ void _utility_delete(void* data)
         break;
         case MESH:
             mesh* m = (mesh*) data;
-            fn.utility.memory -= m->vertex->size * m->vertex->byte;
-            fn.utility.memory -= m->uv->size * m->uv->byte;
-            fn.utility.memory -= m->index->size * m->index->byte;
             fn.utility.memory -= sizeof(mesh);
             _utility_delete(m->vertex);
             _utility_delete(m->uv);
@@ -100,7 +100,7 @@ static void _utility_log(void* data, const char* file, int line)
             }
             printf("- Count: %d\n", _array->count);
             printf("- Size: %d\n", _array->size);
-            printf("- Memory: %d bytes\n", sizeof(array) + (_array->size * _array->byte));
+            printf("- Memory: %zu bytes\n", sizeof(array) + (_array->size * _array->byte));
             for (int i = 0; i < _array->count; i++) {
                 void* e = (char*)_array->data + i * _array->byte;
                 switch (_array->value) {
@@ -123,7 +123,7 @@ static void _utility_log(void* data, const char* file, int line)
             printf("- XYZ: %d %d %d\n", _chunk->x, _chunk->y, _chunk->z);
             printf("- Mesh: \n");
             printf("- Shape: \n");
-            printf("- Memory: %d bytes\n", sizeof(chunk));
+            printf("- Memory: %zu bytes\n", sizeof(chunk));
         break;
         case GAME:
 
@@ -131,7 +131,7 @@ static void _utility_log(void* data, const char* file, int line)
         case GRID:
             grid* _grid = (grid*) data;
             printf("\033[32mGrid\033[0m: %s, %d\n", file, line);
-            printf("- Memory: %d bytes\n", sizeof(mesh));
+            printf("- Memory: %zu bytes\n", sizeof(mesh));
         break;
         case LIST:
 
@@ -141,7 +141,7 @@ static void _utility_log(void* data, const char* file, int line)
         case MESH:
             mesh* _mesh = (mesh*) data;
             printf("\033[32mMesh\033[0m: %s, %d\n", file, line);
-            printf("- Memory: %d bytes\n", sizeof(mesh));
+            printf("- Memory: %zu bytes\n", sizeof(mesh));
         break;
         case TABLE:
 

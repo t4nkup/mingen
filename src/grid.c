@@ -9,16 +9,19 @@
 static grid* _grid_new(int size)
 {
     grid* g = malloc(sizeof(grid));
+    fn.utility.memory += sizeof(grid);
     g->type = GRID;
     g->size = size;
-    g->data = malloc(size * sizeof(void***));
-    for (int x = 0; x < size; x++) {
-        g->data[x] = malloc(size * sizeof(void**));
-        for (int y = 0; y < size; y++) {
+    g->data = malloc(size * sizeof(void*));
+    fn.utility.memory += size * sizeof(void*);
+    for(int x = 0; x < size; x++) {
+        g->data[x] = malloc(size * sizeof(void*));
+        fn.utility.memory += size * sizeof(void*);
+        for(int y = 0; y < size; y++) {
             g->data[x][y] = calloc(size, sizeof(void*));
+            fn.utility.memory += size * sizeof(void*);
         }
     }
-    fn.utility.memory += sizeof(grid);
     return g;
 }
 

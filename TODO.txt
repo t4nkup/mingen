@@ -1,15 +1,3 @@
-- test out logging and deleting the types (make sure memory matches up)
-    - chunk
-    - entry
-    - game
-    - grid 
-    - list 
-    - map 
-    - mesh 
-    - shape 
-    - table 
-    - transformaAssa
-
 - figure out how to remove /build/ from git repo
 
 - draw a cube from "CUBE" shape
