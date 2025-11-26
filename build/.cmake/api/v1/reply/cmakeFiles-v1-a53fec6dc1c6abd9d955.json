@@ -6,7 +6,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/4.2.0-rc3/CMakeSystem.cmake"
+			"path" : "build/CMakeFiles/4.2.0/CMakeSystem.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -20,7 +20,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/4.2.0-rc3/CMakeCCompiler.cmake"
+			"path" : "build/CMakeFiles/4.2.0/CMakeCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -84,7 +84,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/CMakeFiles/4.2.0-rc3/CMakeRCCompiler.cmake"
+			"path" : "build/CMakeFiles/4.2.0/CMakeRCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -119,7 +119,12 @@
 		{
 			"isCMake" : true,
 			"isExternal" : true,
-			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-C.cmake"
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Linker/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/CMake/share/cmake-4.2/Modules/Linker/GNU.cmake"
 		},
 		{
 			"isCMake" : true,

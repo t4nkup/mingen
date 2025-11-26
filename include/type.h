@@ -24,7 +24,6 @@ array;
 
 typedef struct button
 { 
-    type type;
     bool pressed;               // true on the frame that a button was pressed (less than 0.2s)
     bool up;                    // true on the frame that a button was released
     bool down;                  // true all frames where button is down
@@ -41,8 +40,8 @@ button;
 typedef struct chunk
 { 
     type type;
-    int busy;                   // whether the chunk is currently drawing
-    int loaded;                 // whether the chunk is currently loaded
+    bool busy;                  // whether the chunk is currently drawing
+    bool loaded;                // whether the chunk is currently loaded
     int x, y, z;                // represents the world position of the chunk
     mesh* mesh;                 // each chunk will have a mesh that is a combination of its shapes
     grid* shape;                // a grid of shapes indexed by their xyz position in the chunk

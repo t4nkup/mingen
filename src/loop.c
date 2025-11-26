@@ -53,18 +53,13 @@ static void _loop_tick()
     // process logic
     if (fn.input.A.pressed) { 
 
-        array* a = fn.array.new(5, INT);
-        fn.array.add(a, 3, (int[]) { 1, 2, 3 });
-        log(a);
-        chunk* c = fn.list.get(fn.data.map->chunks, 0);
-        log(c->mesh->vertex);
-        log(c->mesh->uv);
-        log(c->mesh->index);
         logmem();
-        delete(a);
-        delete(c->mesh->vertex);
-        delete(c->mesh->uv);
-        delete(c->mesh->index);
+        chunk* c = fn.chunk.new(0, 0, 0);
+        log(c);
+        log(c->shape);
+        log(c->mesh);
+        logmem();
+        delete(c);
         logmem();
 
         // log("A pressed"); 

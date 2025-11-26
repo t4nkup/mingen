@@ -15,19 +15,34 @@ void _utility_delete(void* data)
     switch(t)
     {
         case ARRAY:
-            log("array deleted");
             array* a = (array*) data;
             fn.utility.memory -= a->size * a->byte;
             fn.utility.memory -= sizeof(array);
             free(a->data);
         break;
         case CHUNK:
+            chunk* c = (chunk*) data;
+            fn.utility.memory -= sizeof(chunk);
+            _utility_delete(c->mesh);
+            _utility_delete(c->shape);
         break;
         case ENTRY:
         break;
         case GAME:
         break;
         case GRID:
+            grid* g = (grid*) data;
+            fn.utility.memory -= sizeof(grid);
+            for (int i = 0; i < g->size; i++) {
+                for (int j = 0; j < g->size; j++) {
+                    for (int k = 0; k < g->size; k++) {
+                        _utility_delete(g->data[i][j][k]);
+                    }
+                    _utility_delete(g->data[i][j]);
+                }
+                _utility_delete(g->data[i]);
+            }
+            _utility_delete(g->data);
         break;
         case LIST:
             list* l = (list*) data;
@@ -39,6 +54,10 @@ void _utility_delete(void* data)
         break;
         case MESH:
             mesh* m = (mesh*) data;
+            fn.utility.memory -= m->vertex->size * m->vertex->byte;
+            fn.utility.memory -= m->uv->size * m->uv->byte;
+            fn.utility.memory -= m->index->size * m->index->byte;
+            fn.utility.memory -= sizeof(mesh);
             _utility_delete(m->vertex);
             _utility_delete(m->uv);
             _utility_delete(m->index);
@@ -97,13 +116,22 @@ static void _utility_log(void* data, const char* file, int line)
             }
         break;
         case CHUNK:
+            chunk* _chunk = (chunk*) data;
+            printf("\033[32mChunk\033[0m: %s, %d\n", file, line);
+            printf("- Busy: %d\n", _chunk->busy);
+            printf("- Loaded: %d\n", _chunk->loaded);
+            printf("- XYZ: %d %d %d\n", _chunk->x, _chunk->y, _chunk->z);
+            printf("- Mesh: \n");
+            printf("- Shape: \n");
+            printf("- Memory: %d bytes\n", sizeof(chunk));
         break;
         case GAME:
 
         break;
         case GRID:
             grid* _grid = (grid*) data;
-            printf("GRID\n- Size: %d", _grid->size);
+            printf("\033[32mGrid\033[0m: %s, %d\n", file, line);
+            printf("- Memory: %d bytes\n", sizeof(mesh));
         break;
         case LIST:
 
@@ -111,7 +139,9 @@ static void _utility_log(void* data, const char* file, int line)
         case MAP:
         break;
         case MESH:
-
+            mesh* _mesh = (mesh*) data;
+            printf("\033[32mMesh\033[0m: %s, %d\n", file, line);
+            printf("- Memory: %d bytes\n", sizeof(mesh));
         break;
         case TABLE:
 

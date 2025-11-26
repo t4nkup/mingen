@@ -76,285 +76,285 @@ CMakeFiles/mingen.dir/src/array.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/array.c.obj: C:/Users/Unknown/Desktop/mingen/src/array.c
 CMakeFiles/mingen.dir/src/array.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/mingen.dir/src/array.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/array.c.obj -MF CMakeFiles\mingen.dir\src\array.c.obj.d -o CMakeFiles\mingen.dir\src\array.c.obj -c C:\Users\Unknown\Desktop\mingen\src\array.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/array.c.obj -MF CMakeFiles\mingen.dir\src\array.c.obj.d -o CMakeFiles\mingen.dir\src\array.c.obj -c C:\Users\Unknown\Desktop\mingen\src\array.c
 
 CMakeFiles/mingen.dir/src/array.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/array.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\array.c > CMakeFiles\mingen.dir\src\array.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\array.c > CMakeFiles\mingen.dir\src\array.c.i
 
 CMakeFiles/mingen.dir/src/array.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/array.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\array.c -o CMakeFiles\mingen.dir\src\array.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\array.c -o CMakeFiles\mingen.dir\src\array.c.s
 
 CMakeFiles/mingen.dir/src/chunk.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/chunk.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/chunk.c.obj: C:/Users/Unknown/Desktop/mingen/src/chunk.c
 CMakeFiles/mingen.dir/src/chunk.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/mingen.dir/src/chunk.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/chunk.c.obj -MF CMakeFiles\mingen.dir\src\chunk.c.obj.d -o CMakeFiles\mingen.dir\src\chunk.c.obj -c C:\Users\Unknown\Desktop\mingen\src\chunk.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/chunk.c.obj -MF CMakeFiles\mingen.dir\src\chunk.c.obj.d -o CMakeFiles\mingen.dir\src\chunk.c.obj -c C:\Users\Unknown\Desktop\mingen\src\chunk.c
 
 CMakeFiles/mingen.dir/src/chunk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/chunk.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\chunk.c > CMakeFiles\mingen.dir\src\chunk.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\chunk.c > CMakeFiles\mingen.dir\src\chunk.c.i
 
 CMakeFiles/mingen.dir/src/chunk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/chunk.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\chunk.c -o CMakeFiles\mingen.dir\src\chunk.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\chunk.c -o CMakeFiles\mingen.dir\src\chunk.c.s
 
 CMakeFiles/mingen.dir/src/data.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/data.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/data.c.obj: C:/Users/Unknown/Desktop/mingen/src/data.c
 CMakeFiles/mingen.dir/src/data.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/mingen.dir/src/data.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/data.c.obj -MF CMakeFiles\mingen.dir\src\data.c.obj.d -o CMakeFiles\mingen.dir\src\data.c.obj -c C:\Users\Unknown\Desktop\mingen\src\data.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/data.c.obj -MF CMakeFiles\mingen.dir\src\data.c.obj.d -o CMakeFiles\mingen.dir\src\data.c.obj -c C:\Users\Unknown\Desktop\mingen\src\data.c
 
 CMakeFiles/mingen.dir/src/data.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/data.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\data.c > CMakeFiles\mingen.dir\src\data.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\data.c > CMakeFiles\mingen.dir\src\data.c.i
 
 CMakeFiles/mingen.dir/src/data.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/data.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\data.c -o CMakeFiles\mingen.dir\src\data.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\data.c -o CMakeFiles\mingen.dir\src\data.c.s
 
 CMakeFiles/mingen.dir/src/game.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/game.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/game.c.obj: C:/Users/Unknown/Desktop/mingen/src/game.c
 CMakeFiles/mingen.dir/src/game.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/mingen.dir/src/game.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/game.c.obj -MF CMakeFiles\mingen.dir\src\game.c.obj.d -o CMakeFiles\mingen.dir\src\game.c.obj -c C:\Users\Unknown\Desktop\mingen\src\game.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/game.c.obj -MF CMakeFiles\mingen.dir\src\game.c.obj.d -o CMakeFiles\mingen.dir\src\game.c.obj -c C:\Users\Unknown\Desktop\mingen\src\game.c
 
 CMakeFiles/mingen.dir/src/game.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/game.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\game.c > CMakeFiles\mingen.dir\src\game.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\game.c > CMakeFiles\mingen.dir\src\game.c.i
 
 CMakeFiles/mingen.dir/src/game.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/game.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\game.c -o CMakeFiles\mingen.dir\src\game.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\game.c -o CMakeFiles\mingen.dir\src\game.c.s
 
 CMakeFiles/mingen.dir/src/graphics.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/graphics.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/graphics.c.obj: C:/Users/Unknown/Desktop/mingen/src/graphics.c
 CMakeFiles/mingen.dir/src/graphics.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/mingen.dir/src/graphics.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/graphics.c.obj -MF CMakeFiles\mingen.dir\src\graphics.c.obj.d -o CMakeFiles\mingen.dir\src\graphics.c.obj -c C:\Users\Unknown\Desktop\mingen\src\graphics.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/graphics.c.obj -MF CMakeFiles\mingen.dir\src\graphics.c.obj.d -o CMakeFiles\mingen.dir\src\graphics.c.obj -c C:\Users\Unknown\Desktop\mingen\src\graphics.c
 
 CMakeFiles/mingen.dir/src/graphics.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/graphics.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\graphics.c > CMakeFiles\mingen.dir\src\graphics.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\graphics.c > CMakeFiles\mingen.dir\src\graphics.c.i
 
 CMakeFiles/mingen.dir/src/graphics.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/graphics.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\graphics.c -o CMakeFiles\mingen.dir\src\graphics.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\graphics.c -o CMakeFiles\mingen.dir\src\graphics.c.s
 
 CMakeFiles/mingen.dir/src/grid.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/grid.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/grid.c.obj: C:/Users/Unknown/Desktop/mingen/src/grid.c
 CMakeFiles/mingen.dir/src/grid.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/mingen.dir/src/grid.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/grid.c.obj -MF CMakeFiles\mingen.dir\src\grid.c.obj.d -o CMakeFiles\mingen.dir\src\grid.c.obj -c C:\Users\Unknown\Desktop\mingen\src\grid.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/grid.c.obj -MF CMakeFiles\mingen.dir\src\grid.c.obj.d -o CMakeFiles\mingen.dir\src\grid.c.obj -c C:\Users\Unknown\Desktop\mingen\src\grid.c
 
 CMakeFiles/mingen.dir/src/grid.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/grid.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\grid.c > CMakeFiles\mingen.dir\src\grid.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\grid.c > CMakeFiles\mingen.dir\src\grid.c.i
 
 CMakeFiles/mingen.dir/src/grid.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/grid.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\grid.c -o CMakeFiles\mingen.dir\src\grid.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\grid.c -o CMakeFiles\mingen.dir\src\grid.c.s
 
 CMakeFiles/mingen.dir/src/input.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/input.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/input.c.obj: C:/Users/Unknown/Desktop/mingen/src/input.c
 CMakeFiles/mingen.dir/src/input.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/mingen.dir/src/input.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/input.c.obj -MF CMakeFiles\mingen.dir\src\input.c.obj.d -o CMakeFiles\mingen.dir\src\input.c.obj -c C:\Users\Unknown\Desktop\mingen\src\input.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/input.c.obj -MF CMakeFiles\mingen.dir\src\input.c.obj.d -o CMakeFiles\mingen.dir\src\input.c.obj -c C:\Users\Unknown\Desktop\mingen\src\input.c
 
 CMakeFiles/mingen.dir/src/input.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/input.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\input.c > CMakeFiles\mingen.dir\src\input.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\input.c > CMakeFiles\mingen.dir\src\input.c.i
 
 CMakeFiles/mingen.dir/src/input.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/input.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\input.c -o CMakeFiles\mingen.dir\src\input.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\input.c -o CMakeFiles\mingen.dir\src\input.c.s
 
 CMakeFiles/mingen.dir/src/list.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/list.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/list.c.obj: C:/Users/Unknown/Desktop/mingen/src/list.c
 CMakeFiles/mingen.dir/src/list.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/mingen.dir/src/list.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/list.c.obj -MF CMakeFiles\mingen.dir\src\list.c.obj.d -o CMakeFiles\mingen.dir\src\list.c.obj -c C:\Users\Unknown\Desktop\mingen\src\list.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/list.c.obj -MF CMakeFiles\mingen.dir\src\list.c.obj.d -o CMakeFiles\mingen.dir\src\list.c.obj -c C:\Users\Unknown\Desktop\mingen\src\list.c
 
 CMakeFiles/mingen.dir/src/list.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/list.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\list.c > CMakeFiles\mingen.dir\src\list.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\list.c > CMakeFiles\mingen.dir\src\list.c.i
 
 CMakeFiles/mingen.dir/src/list.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/list.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\list.c -o CMakeFiles\mingen.dir\src\list.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\list.c -o CMakeFiles\mingen.dir\src\list.c.s
 
 CMakeFiles/mingen.dir/src/loop.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/loop.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/loop.c.obj: C:/Users/Unknown/Desktop/mingen/src/loop.c
 CMakeFiles/mingen.dir/src/loop.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/mingen.dir/src/loop.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/loop.c.obj -MF CMakeFiles\mingen.dir\src\loop.c.obj.d -o CMakeFiles\mingen.dir\src\loop.c.obj -c C:\Users\Unknown\Desktop\mingen\src\loop.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/loop.c.obj -MF CMakeFiles\mingen.dir\src\loop.c.obj.d -o CMakeFiles\mingen.dir\src\loop.c.obj -c C:\Users\Unknown\Desktop\mingen\src\loop.c
 
 CMakeFiles/mingen.dir/src/loop.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/loop.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\loop.c > CMakeFiles\mingen.dir\src\loop.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\loop.c > CMakeFiles\mingen.dir\src\loop.c.i
 
 CMakeFiles/mingen.dir/src/loop.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/loop.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\loop.c -o CMakeFiles\mingen.dir\src\loop.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\loop.c -o CMakeFiles\mingen.dir\src\loop.c.s
 
 CMakeFiles/mingen.dir/src/main.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/main.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/main.c.obj: C:/Users/Unknown/Desktop/mingen/src/main.c
 CMakeFiles/mingen.dir/src/main.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/mingen.dir/src/main.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/main.c.obj -MF CMakeFiles\mingen.dir\src\main.c.obj.d -o CMakeFiles\mingen.dir\src\main.c.obj -c C:\Users\Unknown\Desktop\mingen\src\main.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/main.c.obj -MF CMakeFiles\mingen.dir\src\main.c.obj.d -o CMakeFiles\mingen.dir\src\main.c.obj -c C:\Users\Unknown\Desktop\mingen\src\main.c
 
 CMakeFiles/mingen.dir/src/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/main.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\main.c > CMakeFiles\mingen.dir\src\main.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\main.c > CMakeFiles\mingen.dir\src\main.c.i
 
 CMakeFiles/mingen.dir/src/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/main.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\main.c -o CMakeFiles\mingen.dir\src\main.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\main.c -o CMakeFiles\mingen.dir\src\main.c.s
 
 CMakeFiles/mingen.dir/src/map.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/map.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/map.c.obj: C:/Users/Unknown/Desktop/mingen/src/map.c
 CMakeFiles/mingen.dir/src/map.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/mingen.dir/src/map.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/map.c.obj -MF CMakeFiles\mingen.dir\src\map.c.obj.d -o CMakeFiles\mingen.dir\src\map.c.obj -c C:\Users\Unknown\Desktop\mingen\src\map.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/map.c.obj -MF CMakeFiles\mingen.dir\src\map.c.obj.d -o CMakeFiles\mingen.dir\src\map.c.obj -c C:\Users\Unknown\Desktop\mingen\src\map.c
 
 CMakeFiles/mingen.dir/src/map.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/map.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\map.c > CMakeFiles\mingen.dir\src\map.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\map.c > CMakeFiles\mingen.dir\src\map.c.i
 
 CMakeFiles/mingen.dir/src/map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/map.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\map.c -o CMakeFiles\mingen.dir\src\map.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\map.c -o CMakeFiles\mingen.dir\src\map.c.s
 
 CMakeFiles/mingen.dir/src/mesh.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/mesh.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/mesh.c.obj: C:/Users/Unknown/Desktop/mingen/src/mesh.c
 CMakeFiles/mingen.dir/src/mesh.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/mingen.dir/src/mesh.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/mesh.c.obj -MF CMakeFiles\mingen.dir\src\mesh.c.obj.d -o CMakeFiles\mingen.dir\src\mesh.c.obj -c C:\Users\Unknown\Desktop\mingen\src\mesh.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/mesh.c.obj -MF CMakeFiles\mingen.dir\src\mesh.c.obj.d -o CMakeFiles\mingen.dir\src\mesh.c.obj -c C:\Users\Unknown\Desktop\mingen\src\mesh.c
 
 CMakeFiles/mingen.dir/src/mesh.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/mesh.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\mesh.c > CMakeFiles\mingen.dir\src\mesh.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\mesh.c > CMakeFiles\mingen.dir\src\mesh.c.i
 
 CMakeFiles/mingen.dir/src/mesh.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/mesh.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\mesh.c -o CMakeFiles\mingen.dir\src\mesh.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\mesh.c -o CMakeFiles\mingen.dir\src\mesh.c.s
 
 CMakeFiles/mingen.dir/src/network.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/network.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/network.c.obj: C:/Users/Unknown/Desktop/mingen/src/network.c
 CMakeFiles/mingen.dir/src/network.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/mingen.dir/src/network.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/network.c.obj -MF CMakeFiles\mingen.dir\src\network.c.obj.d -o CMakeFiles\mingen.dir\src\network.c.obj -c C:\Users\Unknown\Desktop\mingen\src\network.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/network.c.obj -MF CMakeFiles\mingen.dir\src\network.c.obj.d -o CMakeFiles\mingen.dir\src\network.c.obj -c C:\Users\Unknown\Desktop\mingen\src\network.c
 
 CMakeFiles/mingen.dir/src/network.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/network.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\network.c > CMakeFiles\mingen.dir\src\network.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\network.c > CMakeFiles\mingen.dir\src\network.c.i
 
 CMakeFiles/mingen.dir/src/network.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/network.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\network.c -o CMakeFiles\mingen.dir\src\network.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\network.c -o CMakeFiles\mingen.dir\src\network.c.s
 
 CMakeFiles/mingen.dir/src/shape/cube.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/shape/cube.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/shape/cube.c.obj: C:/Users/Unknown/Desktop/mingen/src/shape/cube.c
 CMakeFiles/mingen.dir/src/shape/cube.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/mingen.dir/src/shape/cube.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/shape/cube.c.obj -MF CMakeFiles\mingen.dir\src\shape\cube.c.obj.d -o CMakeFiles\mingen.dir\src\shape\cube.c.obj -c C:\Users\Unknown\Desktop\mingen\src\shape\cube.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/shape/cube.c.obj -MF CMakeFiles\mingen.dir\src\shape\cube.c.obj.d -o CMakeFiles\mingen.dir\src\shape\cube.c.obj -c C:\Users\Unknown\Desktop\mingen\src\shape\cube.c
 
 CMakeFiles/mingen.dir/src/shape/cube.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/shape/cube.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\shape\cube.c > CMakeFiles\mingen.dir\src\shape\cube.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\shape\cube.c > CMakeFiles\mingen.dir\src\shape\cube.c.i
 
 CMakeFiles/mingen.dir/src/shape/cube.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/shape/cube.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\shape\cube.c -o CMakeFiles\mingen.dir\src\shape\cube.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\shape\cube.c -o CMakeFiles\mingen.dir\src\shape\cube.c.s
 
 CMakeFiles/mingen.dir/src/shape/ramp.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/shape/ramp.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/shape/ramp.c.obj: C:/Users/Unknown/Desktop/mingen/src/shape/ramp.c
 CMakeFiles/mingen.dir/src/shape/ramp.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/mingen.dir/src/shape/ramp.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/shape/ramp.c.obj -MF CMakeFiles\mingen.dir\src\shape\ramp.c.obj.d -o CMakeFiles\mingen.dir\src\shape\ramp.c.obj -c C:\Users\Unknown\Desktop\mingen\src\shape\ramp.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/shape/ramp.c.obj -MF CMakeFiles\mingen.dir\src\shape\ramp.c.obj.d -o CMakeFiles\mingen.dir\src\shape\ramp.c.obj -c C:\Users\Unknown\Desktop\mingen\src\shape\ramp.c
 
 CMakeFiles/mingen.dir/src/shape/ramp.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/shape/ramp.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\shape\ramp.c > CMakeFiles\mingen.dir\src\shape\ramp.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\shape\ramp.c > CMakeFiles\mingen.dir\src\shape\ramp.c.i
 
 CMakeFiles/mingen.dir/src/shape/ramp.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/shape/ramp.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\shape\ramp.c -o CMakeFiles\mingen.dir\src\shape\ramp.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\shape\ramp.c -o CMakeFiles\mingen.dir\src\shape\ramp.c.s
 
 CMakeFiles/mingen.dir/src/sound.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/sound.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/sound.c.obj: C:/Users/Unknown/Desktop/mingen/src/sound.c
 CMakeFiles/mingen.dir/src/sound.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/mingen.dir/src/sound.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/sound.c.obj -MF CMakeFiles\mingen.dir\src\sound.c.obj.d -o CMakeFiles\mingen.dir\src\sound.c.obj -c C:\Users\Unknown\Desktop\mingen\src\sound.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/sound.c.obj -MF CMakeFiles\mingen.dir\src\sound.c.obj.d -o CMakeFiles\mingen.dir\src\sound.c.obj -c C:\Users\Unknown\Desktop\mingen\src\sound.c
 
 CMakeFiles/mingen.dir/src/sound.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/sound.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\sound.c > CMakeFiles\mingen.dir\src\sound.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\sound.c > CMakeFiles\mingen.dir\src\sound.c.i
 
 CMakeFiles/mingen.dir/src/sound.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/sound.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\sound.c -o CMakeFiles\mingen.dir\src\sound.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\sound.c -o CMakeFiles\mingen.dir\src\sound.c.s
 
 CMakeFiles/mingen.dir/src/table.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/table.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/table.c.obj: C:/Users/Unknown/Desktop/mingen/src/table.c
 CMakeFiles/mingen.dir/src/table.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/mingen.dir/src/table.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/table.c.obj -MF CMakeFiles\mingen.dir\src\table.c.obj.d -o CMakeFiles\mingen.dir\src\table.c.obj -c C:\Users\Unknown\Desktop\mingen\src\table.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/table.c.obj -MF CMakeFiles\mingen.dir\src\table.c.obj.d -o CMakeFiles\mingen.dir\src\table.c.obj -c C:\Users\Unknown\Desktop\mingen\src\table.c
 
 CMakeFiles/mingen.dir/src/table.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/table.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\table.c > CMakeFiles\mingen.dir\src\table.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\table.c > CMakeFiles\mingen.dir\src\table.c.i
 
 CMakeFiles/mingen.dir/src/table.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/table.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\table.c -o CMakeFiles\mingen.dir\src\table.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\table.c -o CMakeFiles\mingen.dir\src\table.c.s
 
 CMakeFiles/mingen.dir/src/utility.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/src/utility.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/src/utility.c.obj: C:/Users/Unknown/Desktop/mingen/src/utility.c
 CMakeFiles/mingen.dir/src/utility.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/mingen.dir/src/utility.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/utility.c.obj -MF CMakeFiles\mingen.dir\src\utility.c.obj.d -o CMakeFiles\mingen.dir\src\utility.c.obj -c C:\Users\Unknown\Desktop\mingen\src\utility.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/src/utility.c.obj -MF CMakeFiles\mingen.dir\src\utility.c.obj.d -o CMakeFiles\mingen.dir\src\utility.c.obj -c C:\Users\Unknown\Desktop\mingen\src\utility.c
 
 CMakeFiles/mingen.dir/src/utility.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/src/utility.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\utility.c > CMakeFiles\mingen.dir\src\utility.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\src\utility.c > CMakeFiles\mingen.dir\src\utility.c.i
 
 CMakeFiles/mingen.dir/src/utility.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/src/utility.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\utility.c -o CMakeFiles\mingen.dir\src\utility.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\src\utility.c -o CMakeFiles\mingen.dir\src\utility.c.s
 
 CMakeFiles/mingen.dir/lib/GLAD/glad.c.obj: CMakeFiles/mingen.dir/flags.make
 CMakeFiles/mingen.dir/lib/GLAD/glad.c.obj: CMakeFiles/mingen.dir/includes_C.rsp
 CMakeFiles/mingen.dir/lib/GLAD/glad.c.obj: C:/Users/Unknown/Desktop/mingen/lib/GLAD/glad.c
 CMakeFiles/mingen.dir/lib/GLAD/glad.c.obj: CMakeFiles/mingen.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\Unknown\Desktop\mingen\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/mingen.dir/lib/GLAD/glad.c.obj"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/lib/GLAD/glad.c.obj -MF CMakeFiles\mingen.dir\lib\GLAD\glad.c.obj.d -o CMakeFiles\mingen.dir\lib\GLAD\glad.c.obj -c C:\Users\Unknown\Desktop\mingen\lib\GLAD\glad.c
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/mingen.dir/lib/GLAD/glad.c.obj -MF CMakeFiles\mingen.dir\lib\GLAD\glad.c.obj.d -o CMakeFiles\mingen.dir\lib\GLAD\glad.c.obj -c C:\Users\Unknown\Desktop\mingen\lib\GLAD\glad.c
 
 CMakeFiles/mingen.dir/lib/GLAD/glad.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing C source to CMakeFiles/mingen.dir/lib/GLAD/glad.c.i"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\lib\GLAD\glad.c > CMakeFiles\mingen.dir\lib\GLAD\glad.c.i
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Unknown\Desktop\mingen\lib\GLAD\glad.c > CMakeFiles\mingen.dir\lib\GLAD\glad.c.i
 
 CMakeFiles/mingen.dir/lib/GLAD/glad.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling C source to assembly CMakeFiles/mingen.dir/lib/GLAD/glad.c.s"
-	C:\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\lib\GLAD\glad.c -o CMakeFiles\mingen.dir\lib\GLAD\glad.c.s
+	C:\msys64\ucrt64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Unknown\Desktop\mingen\lib\GLAD\glad.c -o CMakeFiles\mingen.dir\lib\GLAD\glad.c.s
 
 # Object files for target mingen
 mingen_OBJECTS = \

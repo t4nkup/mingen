@@ -18,6 +18,7 @@ static grid* _grid_new(int size)
             g->data[x][y] = calloc(size, sizeof(void*));
         }
     }
+    fn.utility.memory += sizeof(grid);
     return g;
 }
 

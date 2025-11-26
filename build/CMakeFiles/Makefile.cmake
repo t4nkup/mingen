@@ -20,8 +20,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.2/Modules/Compiler/GNU.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeCLinkerInformation.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+  "C:/Program Files/CMake/share/cmake-4.2/Modules/Linker/GNU-C.cmake"
+  "C:/Program Files/CMake/share/cmake-4.2/Modules/Linker/GNU.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/GNU.cmake"
-  "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-C.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU-C.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Linker/Windows-GNU.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows-GNU-C-ABI.cmake"
@@ -32,9 +33,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/Windows.cmake"
   "C:/Program Files/CMake/share/cmake-4.2/Modules/Platform/WindowsPaths.cmake"
   "C:/Users/Unknown/Desktop/mingen/CMakeLists.txt"
-  "CMakeFiles/4.2.0-rc3/CMakeCCompiler.cmake"
-  "CMakeFiles/4.2.0-rc3/CMakeRCCompiler.cmake"
-  "CMakeFiles/4.2.0-rc3/CMakeSystem.cmake"
+  "CMakeFiles/4.2.0/CMakeCCompiler.cmake"
+  "CMakeFiles/4.2.0/CMakeRCCompiler.cmake"
+  "CMakeFiles/4.2.0/CMakeSystem.cmake"
   )
 
 # The corresponding makefile is:

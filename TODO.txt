@@ -1,5 +1,4 @@
 - test out logging and deleting the types (make sure memory matches up)
-    - button
     - chunk
     - entry
     - game
@@ -10,6 +9,8 @@
     - shape 
     - table 
     - transform
+
+- figure out how to remove /build/ from git repo
 
 - draw a cube from "CUBE" shape
     - build a "stream" module where we can build an array dynamically

@@ -7,14 +7,16 @@
 static chunk* _chunk_new(int x, int y, int z)
 {
     chunk* c = malloc(sizeof(chunk));
+    c->type = CHUNK;
     c->busy = 0;
     c->loaded = 0;
     c->x = x;
     c->y = y;
     c->z = z;
-    c->mesh = fn.mesh.new(fn);
-    //c->shapes = fn->grid.new(10);
-    //c->shapes->data[0][0][0] = fn->shape.cube.new(0, 0);
+    c->mesh = fn.mesh.new();
+    c->shape = fn.grid.new(10);
+    c->shape->data[0][0][0] = fn.shape.cube.new(0, 0);
+    fn.utility.memory += sizeof(chunk);
     return c;
 }
 

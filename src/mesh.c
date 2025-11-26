@@ -7,6 +7,7 @@
 static mesh* _mesh_new()
 {
     mesh* m = malloc(sizeof(mesh));
+    m->type = MESH;
     m->vertex = fn.array.new(0, FLOAT);
     m->uv = fn.array.new(0, FLOAT);
     m->index = fn.array.new(0, INT);
@@ -35,6 +36,7 @@ static mesh* _mesh_new()
     // unbind our mesh VAO so its not overridden elsewhere
     glBindVertexArray(0);
 
+    fn.utility.memory += sizeof(mesh);
     return m;
 }
 
