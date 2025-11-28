@@ -26,29 +26,39 @@ static void _graphics_framebuffer_resize(GLFWwindow* window, int width, int heig
 static void _graphics_compile_shaders()
 {
     // get our shader data from file
-    char* fdata = load("src/shader/fragment.shader");
-    char* vdata = load("src/shader/vertex.shader");
+    char* vdata = load("../../src/shader/vertex.shader");
+    char* fdata = load("../../src/shader/fragment.shader");
 
     // have openGL compile the shaders
-    unsigned int fshader, vshader;
-    fshader = glCreateShader(GL_FRAGMENT_SHADER);
+    unsigned int vshader, fshader;
     vshader = glCreateShader(GL_VERTEX_SHADER);
-    glShaderSource(fshader, 1, (const GLchar**) &fdata, NULL); glCompileShader(fshader);
+    fshader = glCreateShader(GL_FRAGMENT_SHADER);
     glShaderSource(vshader, 1, (const GLchar**) &vdata, NULL); glCompileShader(vshader);
+    glShaderSource(fshader, 1, (const GLchar**) &fdata, NULL); glCompileShader(fshader);
+
+    GLint s1; glGetShaderiv(fshader, GL_COMPILE_STATUS, &s1);
+    if (!s1) { char l[512]; glGetShaderInfoLog(fshader, 512, NULL, l); printf("Fragment Shader Failed:\n%s\n", l); }
+
+    GLint s2; glGetShaderiv(vshader, GL_COMPILE_STATUS, &s2);
+    if (!s2) { char l[512]; glGetShaderInfoLog(vshader, 512, NULL, l); printf("Vertex Shader Failed:\n%s\n", l); }
 
     // create a shader program and link our shaders to it
-    unsigned int sprogram;
-    sprogram = glCreateProgram();
-    glAttachShader(sprogram, fshader);
-    glAttachShader(sprogram, vshader);
-    glLinkProgram(sprogram);
+    unsigned int s;
+    s = glCreateProgram();
+    glAttachShader(s, vshader);
+    glAttachShader(s, fshader);
+    glLinkProgram(s);
+
+    // Check for linking errors
+    GLint s3; glGetProgramiv(s, GL_LINK_STATUS, &s3);
+    if (!s3) { char l[512]; glGetProgramInfoLog(s, 512, NULL, l); printf("Shader Program Failed:\n%s\n", l); }
 
     // get rid of our temp shader data
-    glDeleteShader(fshader); free (fdata);
     glDeleteShader(vshader); free (vdata);
+    glDeleteShader(fshader); free (fdata);
 
     // store our shader program for future use
-    fn.gfx.shader = sprogram;
+    fn.gfx.shader = s;
 }
 
 //
@@ -65,7 +75,7 @@ static void _graphics_setup()
     glfwSetErrorCallback(_graphics_error);
 
     // create the GLFW window
-    fn.gfx.window = glfwCreateWindow(640, 480, "My Title", NULL, NULL);
+    fn.gfx.window = glfwCreateWindow(800, 600, "My Title", NULL, NULL);
 
     // make it the current context
     glfwMakeContextCurrent(fn.gfx.window);
@@ -91,18 +101,114 @@ static void _graphics_setup()
 static void _graphics_render()
 {
     // and here we render
-    glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
-    glClear(GL_COLOR_BUFFER_BIT);
+    //glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 
     // to draw an object we have to set the correct shader
     glUseProgram(fn.gfx.shader);
 
+    glEnable(GL_DEPTH_TEST);
+
     // loop over our current maps chunks and draw their meshs
-    for(int i = 0; i < fn.data.map->chunks->count; i++)
-    {
-        chunk* c = fn.list.get(fn.data.map->chunks, 0);
-        fn.chunk.draw(c);
-    }
+    // for(int i = 0; i < fn.data.map->chunks->count; i++)
+    // {
+    //     chunk* c = fn.list.get(fn.data.map->chunks, 0);
+    //     fn.chunk.draw(c);
+    // }
+
+    static const float cubeVertices[] = {
+        // positions       
+    -0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f, -0.5f,
+        0.5f,  0.5f, -0.5f,
+        0.5f,  0.5f, -0.5f,
+    -0.5f,  0.5f, -0.5f,
+    -0.5f, -0.5f, -0.5f,
+
+    -0.5f, -0.5f,  0.5f,
+        0.5f, -0.5f,  0.5f,
+        0.5f,  0.5f,  0.5f,
+        0.5f,  0.5f,  0.5f,
+    -0.5f,  0.5f,  0.5f,
+    -0.5f, -0.5f,  0.5f,
+
+    -0.5f,  0.5f,  0.5f,
+    -0.5f,  0.5f, -0.5f,
+    -0.5f, -0.5f, -0.5f,
+    -0.5f, -0.5f, -0.5f,
+    -0.5f, -0.5f,  0.5f,
+    -0.5f,  0.5f,  0.5f,
+
+        0.5f,  0.5f,  0.5f,
+        0.5f,  0.5f, -0.5f,
+        0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f,  0.5f,
+        0.5f,  0.5f,  0.5f,
+
+    -0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f, -0.5f,
+        0.5f, -0.5f,  0.5f,
+        0.5f, -0.5f,  0.5f,
+    -0.5f, -0.5f,  0.5f,
+    -0.5f, -0.5f, -0.5f,
+
+    -0.5f,  0.5f, -0.5f,
+        0.5f,  0.5f, -0.5f,
+        0.5f,  0.5f,  0.5f,
+        0.5f,  0.5f,  0.5f,
+    -0.5f,  0.5f,  0.5f,
+    -0.5f,  0.5f, -0.5f
+    };
+
+        unsigned int VAO,VBO;
+    glGenVertexArrays(1,&VAO);
+    glGenBuffers(1,&VBO);
+
+    glBindVertexArray(VAO);
+    glBindBuffer(GL_ARRAY_BUFFER,VBO);
+    glBufferData(GL_ARRAY_BUFFER,sizeof(cubeVertices),cubeVertices,GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0,3,GL_FLOAT,GL_FALSE,3*sizeof(float),(void*)0);
+    glEnableVertexAttribArray(0);
+
+    glEnable(GL_DEPTH_TEST);
+
+    // ---- Camera settings ----
+    vec3 cameraPos    = {0.0f, 0.0f, 3.0f};
+    vec3 target       = {0.0f, 0.0f, 0.0f};  // cube at origin
+    vec3 up           = {0.0f, 1.0f, 0.0f};
+
+    // Projection (45 FOV, aspect 800/600)
+    mat4 projection;
+    glm_perspective(glm_rad(45.0f), 800.0f/600.0f, 0.1f, 100.0f, projection);
+
+        glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+        glUseProgram(fn.gfx.shader);
+
+        if (fn.input.A.pressed)
+        {
+            printf("hit");
+            cameraPos[0] = 1.0f;
+        }
+
+        // VIEW matrix
+        mat4 view;
+        glm_lookat(cameraPos, target, up, view);
+
+        // MODEL matrix (cube at 0,0,0)
+        mat4 model;
+        glm_mat4_identity(model);
+
+        // MVP
+        mat4 MVP;
+        glm_mat4_mulN((mat4 *[]){&projection, &view, &model}, 3, MVP);
+
+        int loc = glGetUniformLocation(fn.gfx.shader, "MVP");
+        glUniformMatrix4fv(loc, 1, GL_FALSE, (const float*)MVP);
+
+        glBindVertexArray(VAO);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
 }
 
 //

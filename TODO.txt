@@ -1,4 +1,5 @@
-- figure out how to remove /build/ from git repo
+- create a camera module 
+    - move camera position around with input
 
 - draw a cube from "CUBE" shape
     - build a "stream" module where we can build an array dynamically

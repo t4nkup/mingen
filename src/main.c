@@ -32,18 +32,17 @@ int main()
     // initialize our graphics
     fn.gfx.setup();
 
-    // create a new game and a map to go with it
-    game* g = fn.game.new("test");
-    map* m = fn.map.new("test");
-    fn.list.add(g->maps, m);
+    // // create a new game and a map to go with it
+    // game* g = fn.game.new("test");
+    // map* m = fn.map.new("test");
+    // fn.list.add(g->maps, m);
 
-    // create a new chunk for the map
-    chunk* c = fn.chunk.new(0, 0, 0);
-    fn.list.add(m->chunks, c);
+    // // create a new chunk for the map
+    // chunk* c = fn.chunk.new(0, 0, 0);
+    // fn.list.add(m->chunks, c);
 
-    fn.data.game = g;
-    fn.data.map = m;
-
+    // fn.data.game = g;
+    // fn.data.map = m;
 
     // start our game loop
     fn.loop.start();

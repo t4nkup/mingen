@@ -13,6 +13,7 @@
 #include <time.h>
 
 // included libraries
+#include "../lib/CGLM/cglm.h"
 #include "../lib/GLAD/glad.h"
 #include "../lib/GLFW/glfw3.h"
 

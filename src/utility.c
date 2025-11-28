@@ -204,7 +204,7 @@ static void _utility_logmem(const char* file, int line)
 static char* _utility_load(char* filename)
 {
     // open the file
-    FILE* file = fopen(filename, "rb");
+    FILE* file = fopen(filename, "rb"); if (!file) { printf("Failed to open file: %s\n", filename); return NULL; }
     char* data;
     long size;
 
