@@ -19,6 +19,12 @@ struct FN
     } 
     array;
 
+    struct _camera
+    {
+        camera* (*new) ();
+    }
+    camera;
+
     struct _chunk 
     {
         chunk* (*new) (int x, int y, int z);

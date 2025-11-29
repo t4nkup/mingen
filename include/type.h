@@ -32,6 +32,19 @@ typedef struct button
 button;
 
 //
+//  CAMERA:  a players camera
+//
+
+typedef struct camera
+{
+    type type;
+    vec3 position;
+    float yaw, pitch;
+    vec3 front, up, right;
+}
+camera;
+
+//
 //  CHUNK:  a group (10x10x10) of shapes that represents a section of the map terrain
 //          a player can choose how many chunks they want displayed at any given time 
 //          to match their PC performance
@@ -181,9 +194,9 @@ table;
 typedef struct transform
 {
     type type; 
-    float3 position;            // the xyz world position
-    float3 rotation;            // the xyz euler rotation of the object
-    float3 scale;               // the xyz scale of the object
+    vec3 position;            // the xyz world position
+    vec3 rotation;            // the xyz euler rotation of the object
+    vec3 scale;               // the xyz scale of the object
 }
 transform;
 
